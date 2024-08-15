@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header
+      class="bg-dark_background flex flex-row justify-between px-4 sm:px-12 py-4"
+    >
+      <div class="flex justify-center items-center lg:hidden">
+        <button class="text-white flex h-fit mobile-nav__toggle">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <img src="assets/logo.jpeg" alt="Logo" class="w-36 h-14 hidden lg:flex" />
+      <nav class="leading-12 hidden lg:flex">
+        <ul class="flex justify-center gap-8">
+          <li>
+            <a href="/src/" class="font-inter text-white text-lg">Home</a>
+          </li>
+          <li>
+            <a href="/src/about" class="font-inter text-white text-lg">About</a>
+          </li>
+          <li>
+            <a href="/src/solutions" class="font-inter text-white text-lg"
+              >Our Solutions</a
+            >
+          </li>
+          <li>
+            <a href="/src/grade" class="font-inter text-white text-lg"
+              >Free Zone Grade-A Facilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center">
+        <button
+          class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-md"
+        >
+          Contact Us
+        </button>
+      </div>
+    </header>
+
+    <section
+      class="bg-dark_background text-white h-screen px-4 mobile-nav hidden"
+    >
+      <ul class="gap-2 xl:gap-8">
+        <li><a href="/src/" class="font-inter text-white text-lg">Home</a></li>
+        <li>
+          <a href="/src/about" class="font-inter text-white text-lg">About</a>
+        </li>
+        <li>
+          <a href="/src/solutions" class="font-inter text-white text-lg"
+            >Our Solutions</a
+          >
+        </li>
+        <li>
+          <a href="/src/grade" class="font-inter text-white text-lg"
+            >Free Zone Grade-A Facilities</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <main class="bg-blue-500 text-black text-center main-body">
+      <!-- Image and advert -->
+      <section class="min-h-[70vh] advert">
+        <div
+          class="px-10 md:px-44 py-14 flex items-end min-h-[70vh] advert_div"
+        >
+          <div class="grid grid-cols-2 w-full gap-8">
+            <h1
+              class="text-5xl font-bold font-inter text-white col-span-2 text-start"
+            >
+              World class logistics
+            </h1>
+
+            <div class="col-span-2 flex flex-col md:flex-row justify-between">
+              <p class="text-3xl text-white md:w-1/2 text-start font-inter">
+                Storage, Handling, WMS Inventory Management,<br />Distribution &
+                Free Zone Logistics in Nigeria.
+              </p>
+              <div
+                class="flex flex-row mt-4 md:mt-0 justify-start md:justify-end gap-8 md:gap-12 md:w-1/2"
+              >
+                <button class="md:px-4 py-2 text-white w-fit h-fit">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <div class="">
+                  <button class="py-2 px-2 text-white w-fit h-fit">
+                    <i class="fa-solid fa-circle text-[9px]"></i>
+                  </button>
+                  <button class="py-2 px-2 text-white w-fit h-fit">
+                    <i class="fa-solid fa-circle text-[9px]"></i>
+                  </button>
+                  <button class="py-2 px-2 text-white w-fit h-fit">
+                    <i class="fa-solid fa-circle text-[9px]"></i>
+                  </button>
+
+                  <button class="py-2 px-2 text-white w-fit h-fit">
+                    <i class="fa-solid fa-circle text-[9px]"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Free Zone-->
+
+      <section
+        class="min-h-[70vh] bg-dark_background grid grid-cols-2 grid-rows-3"
+      >
+        <img
+          src="./assets/nigeria.png"
+          alt="Nigeria"
+          class="col-span-2 lg:col-span-1 row-span-3"
+        />
+
+        <div
+          class="col-span-2 lg:col-span-1 row-span-3 px-10 lg:px-0 pb-4 lg:py-28 flex flex-col"
+        >
+          <h1
+            class="font-inter text-4xl font-bold text-white text-center lg:text-start mb-10 lg:w-3/5"
+          >
+            Free Zone Logistics Hub: Gate Way to Nigeria and the Region
+          </h1>
+
+          <p class="font-inter text-xl text-white text-start mb-5 lg:w-3/5">
+            TY Logistics Park FZE at Alaro City Lekki Free Zone is a dynamic and
+            integrated logistics hub offering a comprehensive suite of 3PL
+            (Third-Party Logistics) services; warehousing/ storage, handling,
+            inventory management, last mile distribution, cross docking and
+            value-added services.
+          </p>
+
+          <p class="font-inter text-xl text-white text-start lg:w-3/5">
+            We take pride in being the first Grade-A Free Zone distribution
+            centre that is WMS systems driven in Nigeria allowing for Free Zone
+            storage and handling, pick and pack,  import/ export operations,
+            value added services and importer of record services.
+          </p>
+        </div>
+      </section>
+
+      <!--First of its Kind-->
+
+      <section class="min-h-[80vh] grid grid-cols-2">
+        <div class="kind_background min-h-[80vh] col-span-2 lg:hidden"></div>
+
+        <div
+          class="flex flex-col px-10 lg:px-10 xl:px-20 2xl:px-44 py-10 lg:py-0 justify-center bg-third_tile col-span-2 lg:col-span-1"
+        >
+          <h1 class="font-inter text-4xl text-start font-semibold mb-10">
+            First of its Kind in Nigeria and West Africa.
+          </h1>
+          <p class="font-inter text-xl text-start mb-5">
+            First international standards Grade A facilities in Nigeria,
+            providing free zone contract logistics services right in Nigeria.
+            This allows customers to use the TY Logistics Park FZE duty free
+            zone as a regional distribution hub.
+          </p>
+          <p class="font-inter text-xl text-start">
+            <b>Grade A Logistics Park</b>: We are the biggest Grade-A and Edge
+            Certified Distribution Centre in West Africa.<br />
+            <b>Fully Systems Driven</b>: First contract logistics company with a
+            fully systems driven inventory management and operations environment
+            with a world class WMS, IT infrastructure and team.<br />
+            <b>Free Zone Operations</b>: First free zone regional distribution
+            centre logistics provider in West Africa.
+          </p>
+        </div>
+
+        <div class="kind_background min-h-[80vh] hidden lg:flex"></div>
+      </section>
+
+      <!--Our Solutions-->
+
+      <section class="min-h-[80vh] bg-dark_background px-10 md:px-44 py-16">
+        <div class="grid grid-cols-2 w-full gap-8">
+          <h1
+            class="text-4xl font-bold font-inter text-white col-span-2 text-start"
+          >
+            Our Services & Solutions
+          </h1>
+
+          <div class="col-span-2 flex flex-col md:flex-row justify-between">
+            <p class="text-xl text-white md:w-1/2 text-start font-inter">
+              TY Logistics Park FZE takes pride in offering end-to-end contract
+              logistics solutions.
+            </p>
+            <div
+              class="flex flex-row mt-4 md:mt-0 justify-start md:justify-end gap-8 md:gap-12 md:w-1/2"
+            >
+              <button
+                class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-md"
+              >
+                All Solutions
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 py-12"
+        >
+          <div class="storage_background flex h-[30vh] rounded">
+            <div
+              class="solutions_div h-[inherit] w-full flex items-end px-8 py-8"
+            >
+              <p
+                class="text-white text-xl font-inter text-start font-semibold leading-[5rem]"
+              >
+                Storage & handling
+              </p>
+            </div>
+          </div>
+
+          <div class="wms_background flex h-[30vh] rounded">
+            <div
+              class="solutions_div h-[inherit] w-full flex items-end px-8 py-8"
+            >
+              <p class="text-white text-xl font-inter text-start font-semibold">
+                WMS Based Inventory Management
+              </p>
+            </div>
+          </div>
+
+          <div class="pick_background flex h-[30vh] rounded">
+            <div
+              class="solutions_div h-[inherit] w-full flex items-end px-8 py-8"
+            >
+              <p class="text-white text-xl font-inter text-start font-semibold">
+                Pick, Pack & Value Added Services (VAS)
+              </p>
+            </div>
+          </div>
+
+          <div class="last_mile_background flex h-[30vh] rounded">
+            <div
+              class="solutions_div h-[inherit] w-full flex items-end px-8 py-8"
+            >
+              <p
+                class="text-white text-xl font-inter text-start font-semibold leading-[5rem]"
+              >
+                Last Mile Distribution
+              </p>
+            </div>
+          </div>
+
+          <div class="free_zone_background flex h-[30vh] rounded">
+            <div
+              class="solutions_div h-[inherit] w-full flex items-end px-8 py-8"
+            >
+              <p class="text-white text-xl font-inter text-start font-semibold">
+                Free Zone & Importer of Record (IOR) Services
+              </p>
+            </div>
+          </div>
+
+          <div class="warehouse_background flex h-[30vh] rounded">
+            <div
+              class="solutions_div h-[inherit] w-full flex items-end px-8 py-8"
+            >
+              <p
+                class="text-white text-xl font-inter text-start font-semibold lg:leading-[1.7rem] xl:leading-[1.7rem] 2xl:leading-[5rem]"
+              >
+                Site Management Solutions
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-red-500 text-black text-center footer-ext">
+      <h1 class="text-3xl font-bold underline">Footer!</h1>
+    </footer>
+
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>

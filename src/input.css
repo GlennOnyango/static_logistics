@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.advert {
+    background-image: url('./assets/home_advert.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advert_div {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.kind_background {
+    background-image: url('./assets/kind_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.solutions_div {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*solutions cards*/
+.storage_background {
+    background-image: url('./assets/solutions/warehouse.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wms_background {
+    background-image: url('./assets/solutions/wms.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pick_background {
+    background-image: url('./assets/solutions/pick&pack.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.last_mile_background {
+    background-image: url('./assets/solutions/last_mile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.free_zone_background {
+    background-image: url('./assets/solutions/free_zone.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.warehouse_background {
+    background-image: url('./assets/solutions/warehouse.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
