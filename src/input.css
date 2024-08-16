@@ -11,7 +11,7 @@
 }
 
 .advert_div {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .kind_background {
@@ -23,7 +23,8 @@
 }
 
 .solutions_div {
-    background-color: rgba(0, 0, 0, 0.3);
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
 }
 
 
@@ -65,6 +66,33 @@
 
 .warehouse_background {
     background-image: url('./assets/solutions/warehouse.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.images_card_div {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*image cards*/
+.about_us_card_background {
+    background-image: url('./assets/image-cards/about_us.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact_us_card_background {
+    background-image: url('./assets/image-cards/contact_us.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.free_zone_card_background {
+    background-image: url('./assets/image-cards/free_image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
