@@ -7,6 +7,7 @@ module.exports = {
         dark_background: "#313131",
         blue_background: "#091242",
 
+        dark_text_para: ":1E1E1E",
 
         //home
         solutions_card: "#D9D9D9",
@@ -14,14 +15,13 @@ module.exports = {
 
         //about
         third_tile_about: "#F4F4F4",
-
       },
-      fontFamily:{
-        'inter': ['Inter'],
+      fontFamily: {
+        inter: ["Inter"],
       },
       lineHeight: {
         12: "3.5rem",
-      },  
+      },
     },
   },
   plugins: [],
