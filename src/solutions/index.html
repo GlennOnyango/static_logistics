@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TY Logistics Park FZE</title>
+  </head>
+  <body>
+    <header
+      class="bg-dark_background flex flex-row justify-between px-4 sm:px-12 py-4"
+    >
+      <div class="flex justify-center items-center lg:hidden">
+        <button class="text-white flex h-fit mobile-nav__toggle">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <img
+        src="../assets/logo.jpeg"
+        alt="Logo"
+        class="w-36 h-14 hidden lg:flex"
+      />
+      <nav class="leading-12 hidden lg:flex">
+        <ul class="flex justify-center gap-8">
+          <li>
+            <a href="../" class="font-inter text-white text-lg">Home</a>
+          </li>
+          <li>
+            <a href="../about-us/" class="font-inter text-white text-lg"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="../solutions/" class="font-inter text-white text-lg"
+              >Our Solutions</a
+            >
+          </li>
+          <li>
+            <a href="../grade/" class="font-inter text-white text-lg"
+              >Free Zone Grade-A Facilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center">
+        <button
+          class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-md"
+        >
+          Contact Us
+        </button>
+      </div>
+    </header>
+
+    <section
+      class="bg-dark_background text-white h-screen px-4 mobile-nav hidden"
+    >
+      <ul class="gap-2 xl:gap-8">
+        <li><a href="../" class="font-inter text-white text-lg">Home</a></li>
+        <li>
+          <a href="../about-us/" class="font-inter text-white text-lg">About</a>
+        </li>
+        <li>
+          <a href="../solutions/" class="font-inter text-white text-lg"
+            >Our Solutions</a
+          >
+        </li>
+        <li>
+          <a href="../grade/" class="font-inter text-white text-lg"
+            >Free Zone Grade-A Facilities</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <main class="main-body">
+      <!-- Image and advert -->
+      <section class="min-h-[45vh] advert">
+        <div
+          class="px-10 md:px-52 flex items-center min-h-[inherit] advert_div"
+        >
+          <h1
+            class="text-5xl font-bold font-inter text-white col-span-2 text-start"
+          >
+            Our Solutions
+          </h1>
+        </div>
+      </section>
+
+      <!--Storage & handling-->
+
+      <section
+        class="min-h-[55vh] bg-dark_background flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+      >
+        <div
+          class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0"
+        >
+          <img
+            src="../assets/solutions_page/warehouse-storage-interior-with-shelves-loaded-with-goods 4.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+
+        <div class="w-full lg:w-1/2 flex flex-col justify-center">
+          <h1 class="font-inter text-4xl font-bold text-white text-start mb-10">
+            Storage & Handling
+          </h1>
+
+          <ul class="list-disc ml-6">
+            <li class="font-inter text-2xl text-white">
+              Handling into the warehouse
+            </li>
+            <li class="font-inter text-2xl text-white">Quality checks</li>
+            <li class="font-inter text-2xl text-white">
+              Dry Goods & Cold Chain storage
+            </li>
+            <li class="font-inter text-2xl text-white">
+              Dangerous Goods (DG) & Non-DG capability
+            </li>
+            <li class="font-inter text-2xl text-white">
+              Pick, pack and handling out for distribution to market
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--WMS Based Inventory Management-->
+
+      <section
+        class="min-h-[55vh] bg-solutions_card flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+      >
+        <div
+          class="w-full lg:w-1/2 flex justify-start items-center mb-8 lg:mb-0 lg:hidden"
+        >
+          <img
+            src="../assets/solutions_page/rfsmart_1_partner 2.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+
+        <div
+          class="w-full lg:w-1/2 flex flex-col justify-start lg:justify-center lg:items-center mb-8 md:mb-0"
+        >
+          <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
+            <h1
+              class="font-inter text-4xl font-bold text-dark_background text-start mb-10"
+            >
+              WMS Based Inventory Management
+            </h1>
+
+            <p class="font-inter text-2xl text-start">
+              TY Logistics Park FZE operates warehouse operations using Infor
+              WMS. Infor WMS is a best-in-class WMS customized complex
+              warehousing and inventory management operations:
+            </p>
+
+            <ul class="list-disc ml-6">
+              <li class="font-inter text-2xl text-dark_background">
+                Warehouse Management System
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                WMS systems management of complex inventory
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                Real time stock visibility and total data accuracy
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                Stock movement tracking
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                Advanced reporting and analytics
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="w-full lg:w-1/2 hidden lg:flex justify-start items-center mb-8 lg:mb-0"
+        >
+          <img
+            src="../assets/solutions_page/rfsmart_1_partner 2.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+      </section>
+
+      <!--Value Added Services (VAS)-->
+
+      <section
+        class="min-h-[55vh] bg-dark_background flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+      >
+        <div
+          class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0"
+        >
+          <img
+            src="../assets/solutions_page/image 9.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+
+        <div class="w-full lg:w-1/2 flex flex-col justify-center">
+          <h1 class="font-inter text-4xl font-bold text-white text-start mb-10">
+            Value Added Services (VAS)
+          </h1>
+
+          <ul class="list-disc ml-6">
+            <li class="font-inter text-2xl text-white">
+              Product labelling (pallets, boxes & units)
+            </li>
+            <li class="font-inter text-2xl text-white">
+              Customs labels stickering
+            </li>
+            <li class="font-inter text-2xl text-white">
+              Barcoding and labelling
+            </li>
+            <li class="font-inter text-2xl text-white">Packing & kitting</li>
+            <li class="font-inter text-2xl text-white">
+              Package consolidation and deconsolidation etc.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--Free Zone & Importer of Record (IOR) Services-->
+
+      <section
+        class="min-h-[55vh] bg-solutions_card flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+      >
+        <div
+          class="w-full lg:w-1/2 flex justify-start items-center mb-8 lg:mb-0 lg:hidden"
+        >
+          <img
+            src="../assets/solutions_page/IMG-20240812-WA0015 1.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+
+        <div
+          class="w-full lg:w-1/2 flex flex-col justify-start lg:justify-center lg:items-center mb-8 md:mb-0"
+        >
+          <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
+            <h1
+              class="font-inter text-4xl font-bold text-dark_background text-start mb-10"
+            >
+              Free Zone & Importer of Record (IOR) Services
+            </h1>
+
+            <ul class="list-disc ml-6">
+              <li class="font-inter text-2xl text-dark_background">
+                Free zone storage
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                Facilitate Free Zone import/export
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                Customs processing & examination of goods
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                Labelling and associated VAS
+              </li>
+              <li class="font-inter text-2xl text-dark_background">
+                Importer of Record (IOR)/ Consignee Services
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="w-full lg:w-1/2 hidden lg:flex justify-start items-center mb-8 lg:mb-0"
+        >
+          <img
+            src="../assets/solutions_page/IMG-20240812-WA0015 1.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+      </section>
+
+      <!--Secondary/Last Mile Distribution-->
+
+      <section
+        class="min-h-[55vh] bg-dark_background flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+      >
+        <div
+          class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0"
+        >
+          <img
+            src="../assets/solutions_page/image 10.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+
+        <div class="w-full lg:w-1/2 flex flex-col justify-center">
+          <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
+            <h1
+              class="font-inter text-4xl font-bold text-white text-start mb-10"
+            >
+              Secondary/Last Mile Distribution
+            </h1>
+
+            <p class="font-inter text-2xl text-start text-white mb-4">
+              TY Logistics Park has nationwide and regional distribution
+              capability from the TY Distribution Facility.  
+            </p>
+
+            <p class="font-inter text-2xl text-start text-white">
+              Transport Solutions:
+            </p>
+
+            <ul class="list-disc ml-6">
+              <li class="font-inter text-2xl text-white">
+                Pickup from the Port to the warehouse for storage.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Loading at the warehouse facility and delivery to customers
+                nationwide and regional.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Cross dock: Deconsolidation of inbound cargo for different
+                delivery destinations/customers and delivery in smaller
+                vehicles.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Route planning and load planning.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Route and load optimization.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Real time tracking.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Dangerous Goods (DG) & Non-DG capability.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Countrywide and regional last mile distribution.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                On-time, in-full, no errors delivery.
+              </li>
+              <li class="font-inter text-2xl text-white">
+                Proof of delivery (POD) confirmation.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Site Management Solutions-->
+
+      <section
+        class="min-h-[55vh] bg-solutions_card flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+      >
+        <div
+          class="w-full lg:w-1/2 flex justify-start items-center mb-8 lg:mb-0 lg:hidden"
+        >
+          <img
+            src="../assets/solutions_page/image 11.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+
+        <div
+          class="w-full lg:w-1/2 flex flex-col justify-start lg:justify-center lg:items-center mb-8 md:mb-0"
+        >
+          <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
+            <h1
+              class="font-inter text-4xl font-bold text-dark_background text-start mb-10"
+            >
+              Site Management Solutions
+            </h1>
+
+            <p class="font-inter text-2xl text-start text-dark_text_para mb-4">
+              Factory logistics and customer site warehouse management supported
+              by TY Logistics Park FZE staff and systems.  
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full lg:w-1/2 hidden lg:flex justify-start items-center mb-8 lg:mb-0"
+        >
+          <img
+            src="../assets/solutions_page/image 11.png"
+            alt="Nigeria"
+            class="w-full lg:w-3/4"
+          />
+        </div>
+      </section>
+
+      <!--Image cards-->
+
+      <section
+        class="min-h-[80vh] bg-dark_background grid grid-cols-2 grid-rows-3 md:grid-rows-2"
+      >
+        <div
+          class="col-span-2 md:col-span-1 row-span-1 about_us_card_background"
+        >
+          <div class="flex justify-center items-center images_card_div h-full">
+            <h2 class="text-4xl font-inter font-bold text-white">About Us</h2>
+            <button class="px-4 sm:pt-2 text-white w-fit h-fit">
+              <img
+                src="../assets/icons/Arrow 2.png"
+                alt="Direction"
+                class="h-4"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-span-2 md:col-span-1 row-span-1 md:row-span-2 contact_us_card_background"
+        >
+          <div class="flex justify-center items-center images_card_div h-full">
+            <h2 class="text-4xl font-inter font-bold text-white">Contact Us</h2>
+            <button class="px-4 sm:pt-2 text-white w-fit h-fit">
+              <img
+                src="../assets/icons/Arrow 2.png"
+                alt="Direction"
+                class="h-4"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-span-2 md:col-span-1 row-span-1 free_zone_card_background"
+        >
+          <div
+            class="flex justify-center items-center images_card_div h-full px-8"
+          >
+            <h2 class="text-4xl font-inter font-bold text-white">
+              Free Zone Grade-A Facilities
+            </h2>
+
+            <button class="px-4 sm:pt-2 text-white w-fit h-fit">
+              <img
+                src="../assets/icons/Arrow 2.png"
+                alt="Direction"
+                class="h-4"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-dark_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
+    >
+      <div class="flex flex-col">
+        <img src="../assets/logo.jpeg" alt="Logo" class="h-14 mb-8" />
+        <h5 class="text-white text-start font-inter text-lg">
+          TY Logistics Park FZE
+        </h5>
+
+        <h5 class="text-white text-start font-inter text-lg">Copyright 2024</h5>
+      </div>
+
+      <div>
+        <ul class="gap-2">
+          <li>
+            <a href="./" class="font-inter text-white text-lg">Home</a>
+          </li>
+          <li>
+            <a href="../about-us/" class="font-inter text-white text-lg"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="../solutions" class="font-inter text-white text-lg"
+              >Our Solutions</a
+            >
+          </li>
+          <li>
+            <a href="../grade" class="font-inter text-white text-lg"
+              >Free Zone Grade-A Facilities</a
+            >
+          </li>
+          <li>
+            <a href="../grade" class="font-inter text-white text-lg"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="../grade" class="font-inter text-white text-lg">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-row gap-4 mb-10">
+          <img src="../assets/vectors/xVector.png" alt="Phone" class="h-8" />
+          <img src="../assets/vectors/lVector.png" alt="Phone" class="h-8" />
+        </div>
+
+        <h5 class="text-white text-start font-inter text-lg">Group Company:</h5>
+        <h5 class="text-white text-start font-inter text-lg mb-6">
+          Nal Comet shipping
+        </h5>
+
+        <h5 class="text-white text-start font-inter text-lg">
+          Cookie & Privacy Policy
+        </h5>
+      </div>
+    </footer>
+
+    <script src="../js/mobile-nav.js"></script>
+  </body>
+</html>
