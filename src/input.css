@@ -126,7 +126,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
 
 .about_us_fashion_background {
@@ -166,4 +166,13 @@
 
 .about_us_cold_background {
     background-color: ghostwhite;
+}
+
+/*free-zone-grade-a-facilities*/
+.free_zone {
+
+    background-image: url('./assets/free-zone/freezonediv.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
