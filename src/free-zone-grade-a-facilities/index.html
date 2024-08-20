@@ -21,10 +21,10 @@
   </head>
   <body>
     <header
-      class="bg-dark_background flex flex-row justify-between px-4 sm:px-12 py-4"
+      class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4"
     >
       <div class="flex justify-center items-center lg:hidden">
-        <button class="text-white flex h-fit mobile-nav__toggle">
+        <button class="text-dark_text_para flex h-fit mobile-nav__toggle">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
@@ -37,22 +37,16 @@
       <nav class="leading-12 hidden lg:flex">
         <ul class="flex justify-center gap-8">
           <li>
-            <a href="../" class="font-inter text-white text-lg">Home</a>
+            <a href="../" class="font-inter text-lg">Home</a>
           </li>
           <li>
-            <a href="../about-us/" class="font-inter text-white text-lg"
-              >About</a
-            >
+            <a href="../about-us/" class="font-inter text-lg">About Us</a>
           </li>
           <li>
-            <a href="../solutions/" class="font-inter text-white text-lg"
-              >Our Solutions</a
-            >
+            <a href="../solutions/" class="font-inter text-lg">Our Solutions</a>
           </li>
           <li>
-            <a
-              href="../free-zone-grade-a-facilities/"
-              class="font-inter text-white text-lg"
+            <a href="./" class="font-inter text-lg"
               >Free Zone Grade-A Facilities</a
             >
           </li>
@@ -61,7 +55,7 @@
 
       <div class="flex items-center">
         <a
-          class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-md"
+          class="bg-solutions_card font-inter px-4 py-2 w-fit h-fit text-dark_text_para rounded-md"
           href="../contact-us/"
           >Contact Us</a
         >
@@ -69,22 +63,20 @@
     </header>
 
     <section
-      class="bg-dark_background text-white h-screen px-4 mobile-nav hidden"
+      class="bg-third_tile_about text-dark_text_para h-screen px-4 mobile-nav hidden"
     >
       <ul class="gap-2 xl:gap-8">
-        <li><a href="../" class="font-inter text-white text-lg">Home</a></li>
         <li>
-          <a href="../about-us/" class="font-inter text-white text-lg">About</a>
+          <a href="../" class="font-inter text-lg">Home</a>
         </li>
         <li>
-          <a href="../solutions/" class="font-inter text-white text-lg"
-            >Our Solutions</a
-          >
+          <a href="../about-us/" class="font-inter text-lg">About Us</a>
         </li>
         <li>
-          <a
-            href="../free-zone-grade-a-facilities/"
-            class="font-inter text-white text-lg"
+          <a href="../solutions/" class="font-inter text-lg">Our Solutions</a>
+        </li>
+        <li>
+          <a href="./" class="font-inter text-lg"
             >Free Zone Grade-A Facilities</a
           >
         </li>
@@ -95,7 +87,7 @@
       <!-- Image and advert -->
       <section class="min-h-[45vh] free_zone">
         <div
-          class="px-10 md:px-52 flex items-center min-h-[inherit] advert_div"
+          class="px-10 md:px-24 lg:px-36 xl:px-48 flex items-center min-h-[inherit] advert_div"
         >
           <h1
             class="text-5xl font-bold font-inter text-white col-span-2 text-start"
@@ -108,11 +100,9 @@
       <!--Grade A Facilities-->
 
       <section
-        class="min-h-[55vh] bg-dark_background flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+        class="min-h-[55vh] bg-light_blue_background flex flex-col lg:flex-row py-12 px-10 md:px-24 lg:px-36 xl:px-48"
       >
-        <div
-          class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0"
-        >
+        <div class="w-full lg:w-1/2 flex items-center mb-8 lg:mb-0">
           <img
             src="../assets/solutions_page/warehouse-storage-interior-with-shelves-loaded-with-goods 4.png"
             alt="Nigeria"
@@ -161,13 +151,13 @@
       <!--Free Zone Operations-->
 
       <section
-        class="min-h-[55vh] bg-solutions_card text-dark_background grid grid-col-2 py-24 px-10 md:px-52"
+        class="min-h-[55vh] font-inter bg-third_tile_about text-dark_background grid grid-col-2 py-24 px-10 md:px-52"
       >
-        <h1 class="font-inter text-4xl font-bold text-start mb-10 col-span-2">
+        <h1 class="text-4xl font-bold text-start mb-12 col-span-2">
           Free Zone Operations
         </h1>
 
-        <p class="font-inter text-2xl text-start mb-4 col-span-2">
+        <p class="text-2xl text-start mb-12 col-span-2">
           TY Logistics Park FZE Free Zone status enables our distribution center
           to operate as a regional hub for our clients importing/ exporting in
           the Nigerian and regional countries markets. The facility enables
@@ -194,6 +184,7 @@
           </p>
           <ul class="list-disc ml-6">
             <li class="font-inter text-2xl">Free zone storage</li>
+            <li class="font-inter text-2xl">40,000 pallet locations</li>
             <li class="font-inter text-2xl">
               Facilitate Free Zone import/export
             </li>
@@ -212,22 +203,193 @@
         >
           <img
             src="../assets/solutions_page/warehouse-storage-interior-with-shelves-loaded-with-goods 4.png"
-            alt="Nigeria"
+            alt="One of our warehouses"
             class="w-full lg:w-3/4"
           />
+        </div>
+
+        <div class="col-span-2 my-16">
+          <img
+            src="../assets/black_seperator.png"
+            alt="Separator"
+            class="w-full"
+          />
+        </div>
+
+        <div class="col-span-2 grid grid-cols-4 text-dark_text_para">
+          <div class="col-span-4 lg:col-span-1 flex flex-col">
+            <h1 class="font-inter text-4xl font-bold mb-12">
+              Free Zone Benefits:
+            </h1>
+          </div>
+
+          <div class="col-span-4 lg:col-span-3 flex flex-col">
+            <ul class="">
+              <li class="mb-4 flex flex-row gap-8 pl-4">
+                <div class="bg-white p-1 h-fit mt-2">
+                  <svg
+                    width="5"
+                    height="5"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                      fill="#0088FF"
+                    />
+                  </svg>
+                </div>
+                <span class="text-xl font-inter"
+                  ><span class="text-xl font-inter font-bold">
+                    Local Nigeria & Regional (West Africa) Distribution
+                    Strategy:</span
+                  ><br />
+                  Import Goods Duty Free into TY Logistics Park Free Zone
+                  Facility. Only pay destination country duties upon re-export.
+                </span>
+              </li>
+
+              <li class="mb-4 flex flex-row gap-8 pl-4">
+                <div class="bg-white p-1 h-fit mt-2">
+                  <svg
+                    width="5"
+                    height="5"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                      fill="#0088FF"
+                    />
+                  </svg>
+                </div>
+                <span class="text-xl font-inter"
+                  ><span class="text-xl font-inter font-bold">
+                    Cut down lead times, Fulfil orders in days not months:</span
+                  ><br />
+                  Store goods/ buffer stock closer to your customers in the TY
+                  Logistics Park Free Zone in Nigeria and fulfil your orders in
+                  days..
+                </span>
+              </li>
+
+              <li class="mb-4 flex flex-row gap-8 pl-4">
+                <div class="bg-white p-1 h-fit mt-2">
+                  <svg
+                    width="5"
+                    height="5"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                      fill="#0088FF"
+                    />
+                  </svg>
+                </div>
+                <span class="text-xl font-inter"
+                  ><span class="text-xl font-inter font-bold">
+                    Cashflow management:</span
+                  ><br />
+                  Import duty free, defer payment of duties and taxes until when
+                  the goods are removed. Only pay destination country duties and
+                  taxes applicable. Move capital in stable Forex in and out of
+                  the Free Zone freely.
+                </span>
+              </li>
+
+              <li class="mb-4 flex flex-row gap-8 pl-4">
+                <div class="bg-white p-1 h-fit mt-2">
+                  <svg
+                    width="5"
+                    height="5"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                      fill="#0088FF"
+                    />
+                  </svg>
+                </div>
+                <span class="text-xl font-inter"
+                  ><span class="text-xl font-inter font-bold">
+                    Increased West African Market Access:</span
+                  ><br />
+                  Increased access to Nigeria and West African Markets with
+                  better order fulfillment in days, better cashflow management,
+                  and regional distribution capabilities.
+                </span>
+              </li>
+
+              <li class="mb-4 flex flex-row gap-8 pl-4">
+                <div class="bg-white p-1 h-fit mt-2">
+                  <svg
+                    width="5"
+                    height="5"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                      fill="#0088FF"
+                    />
+                  </svg>
+                </div>
+                <span class="text-xl font-inter"
+                  ><span class="text-xl font-inter font-bold">
+                    Cash Movement:</span
+                  ><br />
+                  A free Zone primarily operates in international currencies tax
+                  free regime enabling businesses to transact freely and
+                  repatriate profits and capital.
+                </span>
+              </li>
+
+              <li class="mb-4 flex flex-row gap-8 pl-4">
+                <div class="bg-white p-1 h-fit mt-2">
+                  <svg
+                    width="5"
+                    height="5"
+                    viewBox="0 0 10 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                      fill="#0088FF"
+                    />
+                  </svg>
+                </div>
+                <span class="text-xl font-inter"
+                  ><span class="text-xl font-inter font-bold">
+                    International Standards Infrastructure and Operations:</span
+                  ><br />
+                  Access to advanced logistics infrastructure, Grade-A racked
+                  facilities systems driven inventory management with simplified
+                  import/export and customs procedures.
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!--Lekki Free Zone and Proximity to Lekki Ports-->
 
       <section
-        class="min-h-[55vh] bg-dark_background text-white grid grid-col-2 py-24 px-10 md:px-52"
+        class="min-h-[55vh] font-inter bg-gray_background text-white grid grid-col-2 py-24 px-10 md:px-52"
       >
-        <h1 class="font-inter text-4xl font-bold text-start mb-10 col-span-2">
+        <h1 class="text-4xl font-bold mb-10 col-span-2">
           Lekki Free Zone and Proximity to Lekki Ports
         </h1>
 
-        <p class="font-inter text-2xl text-start mb-10 col-span-2">
+        <p class="text-2xl mb-10 col-span-2">
           TY Logistics Park is situated in the Lekki Free Zone. With proximity
           to the Lekki Ports, the deepest port in West Africa, this cements TY
           Logistics Park FZE position as a strategic import/ export hub for our
@@ -264,7 +426,10 @@
         <div
           class="col-span-2 md:col-span-1 row-span-1 about_us_card_background"
         >
-          <div class="flex justify-center items-center images_card_div h-full">
+          <a
+            href="../solutions/"
+            class="flex justify-center items-center images_card_div h-full"
+          >
             <h2 class="text-4xl font-inter font-bold text-white">
               Our Solutions
             </h2>
@@ -275,12 +440,15 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
         <div
           class="col-span-2 md:col-span-1 row-span-1 md:row-span-2 contact_us_card_background"
         >
-          <div class="flex justify-center items-center images_card_div h-full">
+          <a
+            href="../contact-us/"
+            class="flex justify-center items-center images_card_div h-full"
+          >
             <h2 class="text-4xl font-inter font-bold text-white">Contact Us</h2>
             <button class="px-4 sm:pt-2 text-white w-fit h-fit">
               <img
@@ -289,12 +457,13 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
         <div
           class="col-span-2 md:col-span-1 row-span-1 free_zone_card_background"
         >
-          <div
+          <a
+            href="../about-us/"
             class="flex justify-center items-center images_card_div h-full px-8"
           >
             <h2 class="text-4xl font-inter font-bold text-white">About Us</h2>
@@ -306,13 +475,13 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
       </section>
     </main>
 
     <footer
-      class="bg-dark_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
+      class="bg-light_blue_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
     >
       <div class="flex flex-col">
         <img src="../assets/logo.jpeg" alt="Logo" class="h-14 mb-8" />
@@ -334,22 +503,22 @@
             >
           </li>
           <li>
-            <a href="../solutions" class="font-inter text-white text-lg"
+            <a href="../solutions/" class="font-inter text-white text-lg"
               >Our Solutions</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg"
+            <a href="./" class="font-inter text-white text-lg"
               >Free Zone Grade-A Facilities</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg"
+            <a href="../contact-us/" class="font-inter text-white text-lg"
               >Contact Us</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg">Blog</a>
+            <a href="../blog/" class="font-inter text-white text-lg">Blog</a>
           </li>
         </ul>
       </div>
