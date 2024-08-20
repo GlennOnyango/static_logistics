@@ -17,6 +17,14 @@
     background-repeat: no-repeat;
 }
 
+.blog_background {
+    background-image: url('./assets/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 .advert_div {
     background-color: rgba(0, 0, 0, 0.4);
 }
