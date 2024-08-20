@@ -176,3 +176,31 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+.customized_scroll::-webkit-scrollbar {
+    width: 20px;
+    /* width of the entire scrollbar */
+}
+
+.customized_scroll::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+    -webkit-border-radius: 0.5em;
+
+}
+
+.customized_scroll::-webkit-scrollbar-thumb {
+    /* background-color: #D1D2D4; */
+    /* color of the scroll thumb */
+    /* border-radius: 20px; */
+    /* roundness of the scroll thumb */
+    /* border: 3px solid #D1D2D4; */
+    /* creates padding around scroll thumb */
+    
+    border: 0.2em solid rgba(0, 0, 0, 0);  /* Transparent border together with `background-clip: padding-box` does the trick */
+    background-clip: padding-box;
+    -webkit-border-radius: 0.5em;
+    background-color: #D1D2D4;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.025);
+}
