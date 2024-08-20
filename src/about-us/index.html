@@ -21,10 +21,10 @@
   </head>
   <body>
     <header
-      class="bg-dark_background flex flex-row justify-between px-4 sm:px-12 py-4"
+      class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4"
     >
       <div class="flex justify-center items-center lg:hidden">
-        <button class="text-white flex h-fit mobile-nav__toggle">
+        <button class="text-dark_text_para flex h-fit mobile-nav__toggle">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
@@ -37,22 +37,18 @@
       <nav class="leading-12 hidden lg:flex">
         <ul class="flex justify-center gap-8">
           <li>
-            <a href="../" class="font-inter text-white text-lg">Home</a>
+            <a href="../" class="font-inter text-lg">Home</a>
           </li>
           <li>
-            <a href="../about-us/" class="font-inter text-white text-lg"
-              >About</a
-            >
+            <a href="./about-us/" class="font-inter text-lg">About Us</a>
           </li>
           <li>
-            <a href="../solutions/" class="font-inter text-white text-lg"
-              >Our Solutions</a
-            >
+            <a href="../solutions/" class="font-inter text-lg">Our Solutions</a>
           </li>
           <li>
             <a
               href="../free-zone-grade-a-facilities/"
-              class="font-inter text-white text-lg"
+              class="font-inter text-lg"
               >Free Zone Grade-A Facilities</a
             >
           </li>
@@ -61,7 +57,7 @@
 
       <div class="flex items-center">
         <a
-          class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-md"
+          class="bg-solutions_card font-inter px-4 py-2 w-fit h-fit text-dark_text_para rounded-md"
           href="../contact-us/"
           >Contact Us</a
         >
@@ -69,32 +65,31 @@
     </header>
 
     <section
-      class="bg-dark_background text-white h-screen px-4 mobile-nav hidden"
+      class="bg-third_tile_about text-dark_text_para h-screen px-4 mobile-nav hidden"
     >
       <ul class="gap-2 xl:gap-8">
-        <li><a href="../" class="font-inter text-white text-lg">Home</a></li>
         <li>
-          <a href="../about-us/" class="font-inter text-white text-lg">About</a>
+          <a href="../" class="font-inter text-lg">Home</a>
         </li>
         <li>
-          <a href="../solutions/" class="font-inter text-white text-lg"
-            >Our Solutions</a
-          >
+          <a href="../about-us/" class="font-inter text-lg">About Us</a>
         </li>
         <li>
-          <a
-            href="../free-zone-grade-a-facilities/"
-            class="font-inter text-white text-lg"
+          <a href="../solutions/" class="font-inter text-lg">Our Solutions</a>
+        </li>
+        <li>
+          <a href="../free-zone-grade-a-facilities/" class="font-inter text-lg"
             >Free Zone Grade-A Facilities</a
           >
         </li>
       </ul>
     </section>
-
     <main class="main-body">
       <!-- Image and advert -->
-      <section class="min-h-[55vh] advert">
-        <div class="px-10 md:px-44 flex items-center min-h-[55vh] advert_div">
+      <section class="min-h-[45vh] about_us_background">
+        <div
+          class="px-10 md:px-24 lg:px-36 xl:px-48 flex items-center min-h-[inherit] advert_div"
+        >
           <h1
             class="text-5xl font-bold font-inter text-white col-span-2 text-start"
           >
@@ -103,12 +98,44 @@
         </div>
       </section>
 
-      <!--Free Zone-->
-
+      <!-- Blue new background -->
       <section
-        class="min-h-[70vh] bg-dark_background flex flex-col lg:flex-row"
+        class="min-h-[50vh] bg-light_blue_background text-white px-10 md:px-24 lg:px-36 xl:px-48 grid grid-cols-4 py-14"
       >
-        <div class="bg-dark_background lg:w-1/2 p-8 lg:p-28">
+        <div class="col-span-4 lg:hidden mb-8 flex flex-col">
+          <img
+            src="../assets/image-cards/about_us.jpeg"
+            alt="Nigeria"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="col-span-4 lg:col-span-2 flex flex-col">
+          <h1
+            class="font-inter text-4xl font-bold lg:text-start mb-12 lg:w-4/5"
+          >
+            We are a TY Holding’s contract logistics flagship business
+          </h1>
+
+          <p class="font-inter text-xl text-start mb-6 lg:w-4/5">
+            TY Logistics Park FZE is part of TY Holdings Group. TY Holdings has
+            over 30 years of experience in the logistics sector with NAL-COMET
+            shipping company, one of the most successful indigenous shipping
+            companies in Nigeria. TY Holdings Group was founded in 1979 by
+            General Theophilus Yakubu Danjuma (Rtd), what began life as a
+            shipping business with 12 staff has grown into a group of eight
+            companies employing over 2,000 staff within Nigeria.
+          </p>
+
+          <p class="font-inter text-xl text-start lg:w-4/5">
+            TY Logistics Park FZE aims to be the market mover in setting a new
+            market standard in grade A international standard contract
+            logistics: multi-user, multi-sector storage and handling, systems
+            driven inventory management, pick and pack, value added services and
+            free zone operations.
+          </p>
+        </div>
+
+        <div class="col-span-4 lg:col-span-2 hidden lg:flex flex-col">
           <img
             src="../assets/image-cards/about_us.jpeg"
             alt="Nigeria"
@@ -116,36 +143,116 @@
           />
         </div>
 
-        <div class="lg:w-1/2 flex flex-col py-8 lg:py-28 px-10 lg:px-0">
+        <div class="col-span-4">
+          <img
+            src="../assets/separator.png"
+            alt="Separator"
+            class="my-8 w-full"
+          />
+        </div>
+
+        <div class="col-span-4 lg:col-span-1 flex flex-col">
           <h1
-            class="font-inter text-4xl font-bold text-white text-start mb-10 lg:w-4/5"
+            class="font-inter text-4xl font-bold text-white text-center lg:text-start mb-12 lg:w-4/5"
           >
-            We are a TY Holding’s contract logistics flagship business
+            Our Vision for the TY Logistics Park Free Zone:
           </h1>
+        </div>
 
-          <p class="font-inter text-xl text-white text-start mb-5 lg:w-4/5">
-            TY Logistics Park FZE is part of TY Holdings Group. TY Holdings has
-            over 30 years of experience in the logistics sector with NAL-COMET
-            shipping company, one of the most successful indigenous shipping
-            companies in Nigeria. TY Holdings Group was founded in 1979 by
-            General Theophilus Yakubu Danjuma (Rtd), what began life as a
-            shipping business with 12 staff has grown into a group of eight
-            companies employing over 2,000 staff within Nigeria.  
-          </p>
+        <div class="col-span-4 lg:col-span-3 flex flex-col">
+          <ul class="text-white">
+            <li class="mb-4 flex flex-row gap-8 pl-4">
+              <div class="bg-white p-1 h-fit mt-2">
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                    fill="#0088FF"
+                  />
+                </svg>
+              </div>
+              <span class="text-xl font-inter"
+                ><span class="text-xl font-inter font-bold">
+                  New Standard in Nigeria and West Africa:</span
+                ><br />
+                TY Logistics Park FZE is the market leader in pioneering a new
+                market standard in fully systems driven grade A international
+                standards Free Zone contract logistics in Nigeria and West
+                Africa.
+              </span>
+            </li>
 
-          <p class="font-inter text-xl text-white text-start lg:w-4/5">
-            TY Logistics Park FZE aims to be the market mover in setting a new
-            market standard in grade A international standard contract
-            logistics: multi-user, multi-sector storage and handling, systems
-            driven inventory management, pick and pack, value added services and
-            free zone operations
-          </p>
+            <li class="mb-4 flex flex-row gap-8 pl-4">
+              <div class="bg-white p-1 h-fit mt-2">
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                    fill="#0088FF"
+                  />
+                </svg>
+              </div>
+              <span class="text-xl font-inter"
+                ><span class="text-xl font-inter font-bold">
+                  Free Zone Gateway for Regional Distribution Strategy for our
+                  Clients:</span
+                ><br />
+                The TY Logistics Park FZE enables our clients and partners
+                achieve a Nigerian and entire West African distribution strategy
+                from our free zone distribution center. This enables our clients
+                to cut on importation and delivery lead times, increase West
+                African market access and manage costs and cashflow through
+                deferred duty payments and payment of destination taxes only
+                (hence no double taxation).
+              </span>
+            </li>
+
+            <li class="mb-4 flex flex-row gap-8 pl-4">
+              <div class="bg-white p-1 h-fit mt-2">
+                <svg
+                  width="5"
+                  height="5"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.21065 0.214363C9.03437 0.105748 8.8405 0.036696 8.64014 0.0111491C8.43978 -0.0143979 8.23683 0.0040612 8.04291 0.0654723C7.84898 0.126883 7.66786 0.230043 7.5099 0.36906C7.35195 0.508077 7.22024 0.680227 7.12231 0.875678L4.27157 6.56282L2.64005 4.7542C2.4984 4.59162 2.32896 4.46194 2.14162 4.37273C1.95427 4.28352 1.75278 4.23656 1.54889 4.2346C1.345 4.23263 1.1428 4.2757 0.954088 4.36129C0.765375 4.44688 0.593928 4.57328 0.449751 4.7331C0.305575 4.89293 0.191556 5.08299 0.114347 5.29218C0.0371382 5.50138 -0.00171376 5.72553 5.79772e-05 5.95155C0.00182972 6.17757 0.0441898 6.40094 0.124666 6.60862C0.205143 6.8163 0.322124 7.00413 0.468784 7.16115L3.53988 10.5656C3.8301 10.8882 4.22166 11.0652 4.62551 11.0652L4.83818 11.0482C5.07354 11.0117 5.29805 10.9151 5.49403 10.7661C5.69001 10.6171 5.85211 10.4197 5.96758 10.1894L9.80644 2.52939C9.90445 2.33402 9.96679 2.11916 9.98989 1.89708C10.013 1.675 9.99641 1.45006 9.94108 1.23508C9.88576 1.02011 9.79278 0.819324 9.66745 0.644188C9.54212 0.469052 9.3869 0.322997 9.21065 0.214363Z"
+                    fill="#0088FF"
+                  />
+                </svg>
+              </div>
+              <span class="text-xl font-inter"
+                ><span class="text-xl font-inter font-bold">
+                  International Standards Infrastructure and Operations with
+                  Scale:</span
+                ><br />
+                With over 40,000 pallet locations capacity, the TY Logistics
+                Park FZE has significant scale for volume businesses. We have
+                advanced logistics infrastructure, systems driven inventory
+                management, SOPs with simplified import/export and customs
+                procedures and an experienced team.
+              </span>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!--Our Solutions-->
 
-      <section class="min-h-[80vh] bg-third_tile px-10 md:px-44 py-16">
+      <section
+        class="min-h-[80vh] bg-third_tile px-10 md:px-24 lg:px-36 xl:px-48 py-14"
+      >
         <div class="w-full gap-8 flex flex-col">
           <h1
             class="text-4xl font-bold font-inter text-dark_background col-span-2 text-start"
@@ -265,14 +372,15 @@
       <!--First of its Kind-->
 
       <section
-        class="min-h-[80vh] flex flex-col bg-dark_background px-10 md:px-44 pt-16 pb-4"
+        class="min-h-[80vh] flex flex-col bg-gray_background px-10 md:px-24 lg:px-36 xl:px-48 pt-14 pb-4"
       >
         <div class="flex flex-col lg:flex-row justify-between">
           <h4 class="text-4xl font-bold font-inter text-white leading-12">
             Strategic Location in a Free Zone
           </h4>
-          <button
-            class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-md flex flex-row"
+          <a
+            href="../free-zone-grade-a-facilities/"
+            class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-xl flex flex-row"
           >
             <span class="font-inter font-semibold text-sm">
               <span class="font-inter font-semibold text-2xl">Free Zone</span>
@@ -284,7 +392,7 @@
               alt="Direction"
               class="h-4 ml-4 mt-4"
             />
-          </button>
+          </a>
         </div>
 
         <p class="mt-8 mb-4 font-inter text-white text-xl">
@@ -305,41 +413,23 @@
 
       <!--Free Zone-->
 
-      <section class="min-h-[70vh] bg-solutions_card flex flex-col lg:flex-row">
-        <div class="lg:w-1/2 p-8 lg:p-28">
+      <section
+        class="min-h-[70vh] bg-third_tile_about px-10 md:px-24 lg:px-36 xl:px-48 py-14 flex flex-col lg:flex-row"
+      >
+        <div class="w-full lg:w-1/2 justify-start items-center flex">
           <img
-            src="../assets/image-cards/about_us.jpeg"
-            alt="Nigeria"
-            class="w-full h-full object-cover"
+            src="../assets/about/why_logistics.jpeg"
+            alt="loading on container"
+            class="w-full lg:w-3/4 h-3/4 object-cover"
           />
         </div>
 
-        <div class="lg:w-1/2 flex flex-col py-8 lg:py-36 px-10 lg:px-0">
-          <h1
-            class="font-inter text-4xl font-bold text-dark_background text-start mb-10 lg:w-4/5"
-          >
+        <div class="w-full lg:w-1/2 flex flex-col py-8 lg:py-36">
+          <h1 class="font-inter text-4xl font-bold text-start mb-10">
             Why TY Logistics Park FZE
           </h1>
 
           <ul class="space-y-4">
-            <li class="flex flex-row gap-4">
-              <svg
-                width="39"
-                height="23"
-                viewBox="0 0 39 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.23636 21.35C3.78182 21.35 2.54545 20.9837 1.52727 20.2511C0.509091 19.5185 0 18.6289 0 17.5823C0 17.0381 0.145455 16.5203 0.436364 16.0288C0.727273 15.5374 1.16364 15.1133 1.74545 14.7566V8.79117H5.23636V1.25588H19.2L27.4036 15.1648C27.5782 15.4578 27.7091 15.7509 27.7964 16.0439C27.8836 16.3369 27.9273 16.6404 27.9273 16.9544C27.9273 18.1684 27.3309 19.2045 26.1382 20.0627C24.9455 20.9209 23.5055 21.35 21.8182 21.35C20.6255 21.35 19.527 21.1252 18.5228 20.6756C17.5185 20.226 16.7703 19.6135 16.2781 18.8382H10.169C9.79084 19.5918 9.15084 20.1988 8.24902 20.6593C7.3472 21.1197 6.34298 21.35 5.23636 21.35ZM29.6727 20.0941V0H33.1636V17.5823H38.4V20.0941H29.6727ZM5.23636 18.8382C5.73091 18.8382 6.14575 18.7177 6.48087 18.4765C6.816 18.2354 6.98298 17.9373 6.98182 17.5823C6.98066 17.2273 6.81309 16.9293 6.47913 16.6882C6.14516 16.447 5.73091 16.3265 5.23636 16.3265C4.74182 16.3265 4.32756 16.447 3.9936 16.6882C3.65964 16.9293 3.49207 17.2273 3.49091 17.5823C3.48975 17.9373 3.65731 18.2358 3.9936 18.4778C4.32989 18.7198 4.74415 18.8399 5.23636 18.8382ZM21.8182 18.8382C22.5455 18.8382 23.1639 18.6553 23.6736 18.2894C24.1833 17.9235 24.4375 17.4785 24.4364 16.9544C24.4352 16.4303 24.1809 15.9857 23.6736 15.6207C23.1663 15.2556 22.5478 15.0723 21.8182 15.0706C21.0886 15.0689 20.4707 15.2523 19.9645 15.6207C19.4583 15.989 19.2035 16.4336 19.2 16.9544C19.1965 17.4752 19.4513 17.9202 19.9645 18.2894C20.4777 18.6586 21.0956 18.8416 21.8182 18.8382ZM13.8327 12.5588H22.08L16.8873 3.76765H8.72727V8.79117L13.8327 12.5588Z"
-                  fill="black"
-                />
-              </svg>
-
-              <span class="font-inter text-xl text-dark_background">
-                Best in Class Operational & Execution Standards</span
-              >
-            </li>
             <li class="flex flex-row gap-4">
               <svg
                 width="39"
@@ -353,7 +443,43 @@
                   fill="black"
                 />
               </svg>
-              <span class="font-inter text-xl text-dark_background">
+
+              <span class="font-inter text-xl"
+                >Free Zone Operations and Benefits</span
+              >
+            </li>
+            <li class="flex flex-row gap-4">
+              <svg
+                width="39"
+                height="23"
+                viewBox="0 0 39 22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.23636 21.35C3.78182 21.35 2.54545 20.9837 1.52727 20.2511C0.509091 19.5185 0 18.6289 0 17.5823C0 17.0381 0.145455 16.5203 0.436364 16.0288C0.727273 15.5374 1.16364 15.1133 1.74545 14.7566V8.79117H5.23636V1.25588H19.2L27.4036 15.1648C27.5782 15.4578 27.7091 15.7509 27.7964 16.0439C27.8836 16.3369 27.9273 16.6404 27.9273 16.9544C27.9273 18.1684 27.3309 19.2045 26.1382 20.0627C24.9455 20.9209 23.5055 21.35 21.8182 21.35C20.6255 21.35 19.527 21.1252 18.5228 20.6756C17.5185 20.226 16.7703 19.6135 16.2781 18.8382H10.169C9.79084 19.5918 9.15084 20.1988 8.24902 20.6593C7.3472 21.1197 6.34298 21.35 5.23636 21.35ZM29.6727 20.0941V0H33.1636V17.5823H38.4V20.0941H29.6727ZM5.23636 18.8382C5.73091 18.8382 6.14575 18.7177 6.48087 18.4765C6.816 18.2354 6.98298 17.9373 6.98182 17.5823C6.98066 17.2273 6.81309 16.9293 6.47913 16.6882C6.14516 16.447 5.73091 16.3265 5.23636 16.3265C4.74182 16.3265 4.32756 16.447 3.9936 16.6882C3.65964 16.9293 3.49207 17.2273 3.49091 17.5823C3.48975 17.9373 3.65731 18.2358 3.9936 18.4778C4.32989 18.7198 4.74415 18.8399 5.23636 18.8382ZM21.8182 18.8382C22.5455 18.8382 23.1639 18.6553 23.6736 18.2894C24.1833 17.9235 24.4375 17.4785 24.4364 16.9544C24.4352 16.4303 24.1809 15.9857 23.6736 15.6207C23.1663 15.2556 22.5478 15.0723 21.8182 15.0706C21.0886 15.0689 20.4707 15.2523 19.9645 15.6207C19.4583 15.989 19.2035 16.4336 19.2 16.9544C19.1965 17.4752 19.4513 17.9202 19.9645 18.2894C20.4777 18.6586 21.0956 18.8416 21.8182 18.8382ZM13.8327 12.5588H22.08L16.8873 3.76765H8.72727V8.79117L13.8327 12.5588Z"
+                  fill="black"
+                />
+              </svg>
+
+              <span class="font-inter text-xl"
+                >Best in Class Operational & Execution Standards</span
+              >
+            </li>
+
+            <li class="flex flex-row gap-4">
+              <svg
+                width="39"
+                height="23"
+                viewBox="0 0 34 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.559998 22.7673V5.43974L17.2 0.489014L33.84 5.43974V22.7673H23.856V12.8658H10.544V22.7673H0.559998ZM12.208 22.7673V20.2919H15.536V22.7673H12.208ZM15.536 19.0542V16.5789H18.864V19.0542H15.536ZM18.864 22.7673V20.2919H22.192V22.7673H18.864Z"
+                  fill="black"
+                />
+              </svg>
+              <span class="font-inter text-xl">
                 Grade-A Green EDGE Certified Facilities</span
               >
             </li>
@@ -370,9 +496,10 @@
                   d="M10.08 15.8304H20.32M15.2 12.1174V15.8304M7.51999 6.5478V5.61954C7.51999 2.83475 9.43999 1.90649 12.64 1.90649H17.76C20.96 1.90649 22.88 3.29888 22.88 5.61954V6.5478C26.72 6.5478 29.28 8.40432 29.28 11.1891C29.28 13.9739 26.72 15.8304 22.88 15.8304M7.51999 6.5478H17.76M7.51999 6.5478C3.68 6.5478 1.12 7.94019 1.12 11.1891C1.12 14.438 3.68 15.8304 7.51999 15.8304M10.08 22.3282H20.32V12.1174H10.08V22.3282Z"
                   stroke="black"
                   stroke-width="2"
+                  fill="black"
                 />
               </svg>
-              <span class="font-inter text-xl text-dark_background">
+              <span class="font-inter text-xl">
                 Systems Driven (WMS) Operations Management</span
               >
             </li>
@@ -391,7 +518,7 @@
                 />
               </svg>
 
-              <span class="font-inter text-xl text-dark_background">
+              <span class="font-inter text-xl">
                 Local & Regional Distribution Capabilities</span
               >
             </li>
@@ -400,16 +527,25 @@
               <svg
                 width="39"
                 height="23"
-                viewBox="0 0 12 9"
+                viewBox="0 0 25 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M0.258926 0.7229H11.4172V2.07157H0.258926V0.7229ZM0.258926 4.09458H11.4172V5.44325H0.258926V4.09458ZM0.258926 7.46625H11.4172V8.81492H0.258926V7.46625Z"
+                  d="M21.4568 4.27393H21.2856V5.59672H21.4568C21.7238 5.59672 21.9798 5.6664 22.1686 5.79044C22.3574 5.91447 22.4635 6.0827 22.4635 6.25812V19.486C22.4635 19.6615 22.3574 19.8297 22.1686 19.9537C21.9798 20.0778 21.7238 20.1474 21.4568 20.1474H3.3352C3.06819 20.1474 2.81212 20.0778 2.62332 19.9537C2.43452 19.8297 2.32845 19.6615 2.32845 19.486V6.25812C2.32845 6.0827 2.43452 5.91447 2.62332 5.79044C2.81212 5.6664 3.06819 5.59672 3.3352 5.59672H3.50635V4.27393H3.3352C2.53418 4.27393 1.76596 4.48297 1.19956 4.85508C0.633147 5.22719 0.314941 5.73188 0.314941 6.25812V19.486C0.314941 20.0123 0.633147 20.517 1.19956 20.8891C1.76596 21.2612 2.53418 21.4702 3.3352 21.4702H21.4568C22.2578 21.4702 23.026 21.2612 23.5924 20.8891C24.1588 20.517 24.477 20.0123 24.477 19.486V6.25812C24.477 5.73188 24.1588 5.22719 23.5924 4.85508C23.026 4.48297 22.2578 4.27393 21.4568 4.27393Z"
+                  fill="black"
+                />
+                <path
+                  d="M19.4432 2.95148H16.4229V0.967285H8.36889V2.95148H5.34863V6.91986H19.4432V2.95148ZM17.4297 5.59706H7.36214V4.27427H10.3824V2.29008H14.4094V4.27427H17.4297V5.59706Z"
+                  fill="black"
+                />
+                <path
+                  d="M6.35547 9.56494H18.4365V10.8877H6.35547V9.56494ZM6.35547 12.8719H18.4365V14.1947H6.35547V12.8719ZM6.35547 16.1789H18.4365V17.5017H6.35547V16.1789Z"
                   fill="black"
                 />
               </svg>
-              <span class="font-inter text-xl text-dark_background">
+
+              <span class="font-inter text-xl">
                 Operational and Reporting Excellence</span
               >
             </li>
@@ -428,8 +564,8 @@
                 />
               </svg>
 
-              <span class="font-inter text-xl text-dark_background">
-                Vastly Experienced Team in Contract Logistics</span
+              <span class="font-inter text-xl"
+                >Vastly Experienced Contract Logistics Team</span
               >
             </li>
           </ul>
@@ -444,8 +580,10 @@
         <div
           class="col-span-2 md:col-span-1 row-span-1 about_us_card_background"
         >
-          <div class="flex justify-center items-center images_card_div h-full">
-            <h2 class="text-4xl font-inter font-bold text-white">About Us</h2>
+          <a href="../solutions/" class="flex justify-center items-center images_card_div h-full">
+            <h2 class="text-4xl font-inter font-bold text-white">
+              Our Solutions
+            </h2>
             <button class="px-4 sm:pt-2 text-white w-fit h-fit">
               <img
                 src="../assets/icons/Arrow 2.png"
@@ -453,12 +591,15 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
         <div
           class="col-span-2 md:col-span-1 row-span-1 md:row-span-2 contact_us_card_background"
         >
-          <div class="flex justify-center items-center images_card_div h-full">
+          <a
+            href="../contact-us/"
+            class="flex justify-center items-center images_card_div h-full"
+          >
             <h2 class="text-4xl font-inter font-bold text-white">Contact Us</h2>
             <button class="px-4 sm:pt-2 text-white w-fit h-fit">
               <img
@@ -467,12 +608,13 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
         <div
           class="col-span-2 md:col-span-1 row-span-1 free_zone_card_background"
         >
-          <div
+          <a
+            href="../free-zone-grade-a-facilities/"
             class="flex justify-center items-center images_card_div h-full px-8"
           >
             <h2 class="text-4xl font-inter font-bold text-white">
@@ -486,13 +628,13 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
       </section>
     </main>
 
     <footer
-      class="bg-dark_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
+      class="bg-light_blue_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
     >
       <div class="flex flex-col">
         <img src="../assets/logo.jpeg" alt="Logo" class="h-14 mb-8" />
@@ -506,30 +648,30 @@
       <div>
         <ul class="gap-2">
           <li>
-            <a href="./" class="font-inter text-white text-lg">Home</a>
+            <a href="../" class="font-inter text-white text-lg">Home</a>
           </li>
           <li>
-            <a href="../about-us/" class="font-inter text-white text-lg"
-              >About Us</a
-            >
+            <a href="./" class="font-inter text-white text-lg">About Us</a>
           </li>
           <li>
-            <a href="../solutions" class="font-inter text-white text-lg"
+            <a href="../solutions/" class="font-inter text-white text-lg"
               >Our Solutions</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg"
+            <a
+              href="../free-zone-grade-a-facilities/"
+              class="font-inter text-white text-lg"
               >Free Zone Grade-A Facilities</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg"
+            <a href="../contact-us/" class="font-inter text-white text-lg"
               >Contact Us</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg">Blog</a>
+            <a href="../blog/" class="font-inter text-white text-lg">Blog</a>
           </li>
         </ul>
       </div>

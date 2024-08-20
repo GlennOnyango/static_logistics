@@ -21,10 +21,10 @@
   </head>
   <body>
     <header
-      class="bg-dark_background flex flex-row justify-between px-4 sm:px-12 py-4"
+      class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4"
     >
       <div class="flex justify-center items-center lg:hidden">
-        <button class="text-white flex h-fit mobile-nav__toggle">
+        <button class="text-dark_text_para flex h-fit mobile-nav__toggle">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
@@ -37,22 +37,18 @@
       <nav class="leading-12 hidden lg:flex">
         <ul class="flex justify-center gap-8">
           <li>
-            <a href="../" class="font-inter text-white text-lg">Home</a>
+            <a href="../" class="font-inter text-lg">Home</a>
           </li>
           <li>
-            <a href="../about-us/" class="font-inter text-white text-lg"
-              >About</a
-            >
+            <a href="../about-us/" class="font-inter text-lg">About Us</a>
           </li>
           <li>
-            <a href="../solutions/" class="font-inter text-white text-lg"
-              >Our Solutions</a
-            >
+            <a href="./" class="font-inter text-lg">Our Solutions</a>
           </li>
           <li>
             <a
               href="../free-zone-grade-a-facilities/"
-              class="font-inter text-white text-lg"
+              class="font-inter text-lg"
               >Free Zone Grade-A Facilities</a
             >
           </li>
@@ -61,7 +57,7 @@
 
       <div class="flex items-center">
         <a
-          class="bg-solutions_card font-inter px-4 py-2 text-black w-fit h-fit rounded-md"
+          class="bg-solutions_card font-inter px-4 py-2 w-fit h-fit text-dark_text_para rounded-md"
           href="../contact-us/"
           >Contact Us</a
         >
@@ -69,33 +65,30 @@
     </header>
 
     <section
-      class="bg-dark_background text-white h-screen px-4 mobile-nav hidden"
+      class="bg-third_tile_about text-dark_text_para h-screen px-4 mobile-nav hidden"
     >
       <ul class="gap-2 xl:gap-8">
-        <li><a href="../" class="font-inter text-white text-lg">Home</a></li>
         <li>
-          <a href="../about-us/" class="font-inter text-white text-lg">About</a>
+          <a href="../" class="font-inter text-lg">Home</a>
         </li>
         <li>
-          <a href="../solutions/" class="font-inter text-white text-lg"
-            >Our Solutions</a
-          >
+          <a href="../about-us/" class="font-inter text-lg">About Us</a>
         </li>
         <li>
-          <a
-            href="../free-zone-grade-a-facilities/"
-            class="font-inter text-white text-lg"
+          <a href="../solutions/" class="font-inter text-lg">Our Solutions</a>
+        </li>
+        <li>
+          <a href="../free-zone-grade-a-facilities/" class="font-inter text-lg"
             >Free Zone Grade-A Facilities</a
           >
         </li>
       </ul>
     </section>
-
     <main class="main-body">
       <!-- Image and advert -->
       <section class="min-h-[45vh] advert">
         <div
-          class="px-10 md:px-52 flex items-center min-h-[inherit] advert_div"
+          class="px-10 md:px-24 lg:px-36 xl:px-48 flex items-center min-h-[inherit] advert_div"
         >
           <h1
             class="text-5xl font-bold font-inter text-white col-span-2 text-start"
@@ -108,11 +101,9 @@
       <!--Storage & handling-->
 
       <section
-        class="min-h-[55vh] bg-dark_background flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+        class="min-h-[55vh] bg-light_blue_background font-inter text-white flex flex-col lg:flex-row py-14 px-10 md:px-24 lg:px-36 xl:px-48"
       >
-        <div
-          class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0"
-        >
+        <div class="w-full lg:w-1/2 flex items-center mb-8 lg:mb-0">
           <img
             src="../assets/solutions_page/warehouse-storage-interior-with-shelves-loaded-with-goods 4.png"
             alt="Nigeria"
@@ -121,24 +112,16 @@
         </div>
 
         <div class="w-full lg:w-1/2 flex flex-col justify-center">
-          <h1 class="font-inter text-4xl font-bold text-white text-start mb-10">
+          <h1 class="text-4xl font-bold text-start mb-10">
             Storage & Handling
           </h1>
 
-          <ul class="list-disc ml-6">
-            <li class="font-inter text-2xl text-white">
-              Handling into the warehouse
-            </li>
-            <li class="font-inter text-2xl text-white">Quality checks</li>
-            <li class="font-inter text-2xl text-white">
-              Dry Goods & Cold Chain storage
-            </li>
-            <li class="font-inter text-2xl text-white">
-              Dangerous Goods (DG) & Non-DG capability
-            </li>
-            <li class="font-inter text-2xl text-white">
-              Pick, pack and handling out for distribution to market
-            </li>
+          <ul class="list-disc ml-6 text-2xl">
+            <li>Handling into the warehouse</li>
+            <li>Quality checks</li>
+            <li>Dry Goods & Cold Chain storage</li>
+            <li>Dangerous Goods (DG) & Non-DG capability</li>
+            <li>Pick, pack and handling out for distribution to market</li>
           </ul>
         </div>
       </section>
@@ -146,7 +129,7 @@
       <!--WMS Based Inventory Management-->
 
       <section
-        class="min-h-[55vh] bg-solutions_card flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+        class="min-h-[55vh] bg-third_tile_about text-dark_background font-inter flex flex-col lg:flex-row py-14 px-10 md:px-24 lg:px-36 xl:px-48"
       >
         <div
           class="w-full lg:w-1/2 flex justify-start items-center mb-8 lg:mb-0 lg:hidden"
@@ -158,38 +141,24 @@
           />
         </div>
 
-        <div
-          class="w-full lg:w-1/2 flex flex-col justify-start lg:justify-center lg:items-center mb-8 md:mb-0"
-        >
+        <div class="w-full lg:w-1/2 flex flex-col mb-8 md:mb-0">
           <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
-            <h1
-              class="font-inter text-4xl font-bold text-dark_background text-start mb-10"
-            >
+            <h1 class="text-4xl font-bold text-start mb-10">
               WMS Based Inventory Management
             </h1>
 
-            <p class="font-inter text-2xl text-start">
+            <p class="text-2xl text-start">
               TY Logistics Park FZE operates warehouse operations using Infor
               WMS. Infor WMS is a best-in-class WMS customized complex
               warehousing and inventory management operations:
             </p>
 
-            <ul class="list-disc ml-6">
-              <li class="font-inter text-2xl text-dark_background">
-                Warehouse Management System
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                WMS systems management of complex inventory
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                Real time stock visibility and total data accuracy
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                Stock movement tracking
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                Advanced reporting and analytics
-              </li>
+            <ul class="list-disc ml-6 text-2xl">
+              <li>Warehouse Management System</li>
+              <li>WMS systems management of complex inventory</li>
+              <li>Real time stock visibility and total data accuracy</li>
+              <li>Stock movement tracking</li>
+              <li>Advanced reporting and analytics</li>
             </ul>
           </div>
         </div>
@@ -208,11 +177,9 @@
       <!--Value Added Services (VAS)-->
 
       <section
-        class="min-h-[55vh] bg-dark_background flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+        class="min-h-[55vh] bg-gray_background font-inter text-white flex flex-col lg:flex-row py-12 px-10 md:px-24 lg:px-36 xl:px-48"
       >
-        <div
-          class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0"
-        >
+        <div class="w-full lg:w-1/2 flex items-center mb-8 lg:mb-0">
           <img
             src="../assets/solutions_page/image 9.png"
             alt="Nigeria"
@@ -221,24 +188,16 @@
         </div>
 
         <div class="w-full lg:w-1/2 flex flex-col justify-center">
-          <h1 class="font-inter text-4xl font-bold text-white text-start mb-10">
+          <h1 class="text-4xl font-bold text-start mb-10">
             Value Added Services (VAS)
           </h1>
 
-          <ul class="list-disc ml-6">
-            <li class="font-inter text-2xl text-white">
-              Product labelling (pallets, boxes & units)
-            </li>
-            <li class="font-inter text-2xl text-white">
-              Customs labels stickering
-            </li>
-            <li class="font-inter text-2xl text-white">
-              Barcoding and labelling
-            </li>
-            <li class="font-inter text-2xl text-white">Packing & kitting</li>
-            <li class="font-inter text-2xl text-white">
-              Package consolidation and deconsolidation etc.
-            </li>
+          <ul class="list-disc ml-6 font-inter text-2xl">
+            <li>Product labelling (pallets, boxes & units)</li>
+            <li>Customs labels stickering</li>
+            <li>Barcoding and labelling</li>
+            <li>Packing & kitting</li>
+            <li>Package consolidation and deconsolidation etc.</li>
           </ul>
         </div>
       </section>
@@ -246,7 +205,7 @@
       <!--Free Zone & Importer of Record (IOR) Services-->
 
       <section
-        class="min-h-[55vh] bg-solutions_card flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+        class="min-h-[55vh] bg-third_tile_about text-dark_background font-inter flex flex-col lg:flex-row py-14 px-10 md:px-24 lg:px-36 xl:px-48"
       >
         <div
           class="w-full lg:w-1/2 flex justify-start items-center mb-8 lg:mb-0 lg:hidden"
@@ -258,32 +217,18 @@
           />
         </div>
 
-        <div
-          class="w-full lg:w-1/2 flex flex-col justify-start lg:justify-center lg:items-center mb-8 md:mb-0"
-        >
+        <div class="w-full lg:w-1/2 flex flex-col mb-8 md:mb-0">
           <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
-            <h1
-              class="font-inter text-4xl font-bold text-dark_background text-start mb-10"
-            >
+            <h1 class="text-4xl font-bold text-start mb-10">
               Free Zone & Importer of Record (IOR) Services
             </h1>
 
-            <ul class="list-disc ml-6">
-              <li class="font-inter text-2xl text-dark_background">
-                Free zone storage
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                Facilitate Free Zone import/export
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                Customs processing & examination of goods
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                Labelling and associated VAS
-              </li>
-              <li class="font-inter text-2xl text-dark_background">
-                Importer of Record (IOR)/ Consignee Services
-              </li>
+            <ul class="list-disc ml-6 text-2xl">
+              <li>Free zone storage</li>
+              <li>Facilitate Free Zone import/export</li>
+              <li>Customs processing & examination of goods</li>
+              <li>Labelling and associated VAS</li>
+              <li>Importer of Record (IOR)/ Consignee Services</li>
             </ul>
           </div>
         </div>
@@ -302,11 +247,9 @@
       <!--Secondary/Last Mile Distribution-->
 
       <section
-        class="min-h-[55vh] bg-dark_background flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+        class="min-h-[55vh] bg-light_blue_background font-inter text-white flex flex-col lg:flex-row py-12 px-10 md:px-24 lg:px-36 xl:px-48"
       >
-        <div
-          class="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0"
-        >
+        <div class="w-full lg:w-1/2 flex items-center mb-8 lg:mb-0">
           <img
             src="../assets/solutions_page/image 10.png"
             alt="Nigeria"
@@ -315,56 +258,36 @@
         </div>
 
         <div class="w-full lg:w-1/2 flex flex-col justify-center">
-          <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
-            <h1
-              class="font-inter text-4xl font-bold text-white text-start mb-10"
-            >
+          <div class="w-full">
+            <h1 class="text-4xl font-bold text-start mb-10">
               Secondary/Last Mile Distribution
             </h1>
 
-            <p class="font-inter text-2xl text-start text-white mb-4">
+            <p class="text-2xl mb-4">
               TY Logistics Park has nationwide and regional distribution
               capability from the TY Distribution Facility.  
             </p>
 
-            <p class="font-inter text-2xl text-start text-white">
-              Transport Solutions:
-            </p>
+            <p class="text-2xl">Transport Solutions:</p>
 
-            <ul class="list-disc ml-6">
-              <li class="font-inter text-2xl text-white">
-                Pickup from the Port to the warehouse for storage.
-              </li>
-              <li class="font-inter text-2xl text-white">
+            <ul class="list-disc ml-6 text-2xl">
+              <li>Pickup from the Port to the warehouse for storage.</li>
+              <li>
                 Loading at the warehouse facility and delivery to customers
                 nationwide and regional.
               </li>
-              <li class="font-inter text-2xl text-white">
+              <li>
                 Cross dock: Deconsolidation of inbound cargo for different
                 delivery destinations/customers and delivery in smaller
                 vehicles.
               </li>
-              <li class="font-inter text-2xl text-white">
-                Route planning and load planning.
-              </li>
-              <li class="font-inter text-2xl text-white">
-                Route and load optimization.
-              </li>
-              <li class="font-inter text-2xl text-white">
-                Real time tracking.
-              </li>
-              <li class="font-inter text-2xl text-white">
-                Dangerous Goods (DG) & Non-DG capability.
-              </li>
-              <li class="font-inter text-2xl text-white">
-                Countrywide and regional last mile distribution.
-              </li>
-              <li class="font-inter text-2xl text-white">
-                On-time, in-full, no errors delivery.
-              </li>
-              <li class="font-inter text-2xl text-white">
-                Proof of delivery (POD) confirmation.
-              </li>
+              <li>Route planning and load planning.</li>
+              <li>Route and load optimization.</li>
+              <li>Real time tracking.</li>
+              <li>Dangerous Goods (DG) & Non-DG capability.</li>
+              <li>Countrywide and regional last mile distribution.</li>
+              <li>On-time, in-full, no errors delivery.</li>
+              <li>Proof of delivery (POD) confirmation.</li>
             </ul>
           </div>
         </div>
@@ -373,7 +296,7 @@
       <!--Site Management Solutions-->
 
       <section
-        class="min-h-[55vh] bg-solutions_card flex flex-col lg:flex-row py-24 px-10 lg:px-0"
+        class="min-h-[55vh] bg-third_tile_about text-dark_background font-inter flex flex-col lg:flex-row py-14 px-10 md:px-24 lg:px-36 xl:px-48"
       >
         <div
           class="w-full lg:w-1/2 flex justify-start items-center mb-8 lg:mb-0 lg:hidden"
@@ -385,17 +308,11 @@
           />
         </div>
 
-        <div
-          class="w-full lg:w-1/2 flex flex-col justify-start lg:justify-center lg:items-center mb-8 md:mb-0"
-        >
+        <div class="w-full lg:w-1/2 flex flex-col mb-8 md:mb-0">
           <div class="w-full sm:w-2/3 md:w-5/6 lg:w-2/3 xl:w-3/4">
-            <h1
-              class="font-inter text-4xl font-bold text-dark_background text-start mb-10"
-            >
-              Site Management Solutions
-            </h1>
+            <h1 class="text-4xl font-bold mb-12">Site Management Solutions</h1>
 
-            <p class="font-inter text-2xl text-start text-dark_text_para mb-4">
+            <p class="text-2xl mb-4">
               Factory logistics and customer site warehouse management supported
               by TY Logistics Park FZE staff and systems.  
             </p>
@@ -421,7 +338,7 @@
         <div
           class="col-span-2 md:col-span-1 row-span-1 about_us_card_background"
         >
-          <div class="flex justify-center items-center images_card_div h-full">
+          <a href="../about-us/" class="flex justify-center items-center images_card_div h-full">
             <h2 class="text-4xl font-inter font-bold text-white">About Us</h2>
             <button class="px-4 sm:pt-2 text-white w-fit h-fit">
               <img
@@ -430,12 +347,12 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
         <div
           class="col-span-2 md:col-span-1 row-span-1 md:row-span-2 contact_us_card_background"
         >
-          <div class="flex justify-center items-center images_card_div h-full">
+          <a href="../contact-us/" class="flex justify-center items-center images_card_div h-full">
             <h2 class="text-4xl font-inter font-bold text-white">Contact Us</h2>
             <button class="px-4 sm:pt-2 text-white w-fit h-fit">
               <img
@@ -444,12 +361,12 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </a>
         </div>
         <div
           class="col-span-2 md:col-span-1 row-span-1 free_zone_card_background"
         >
-          <div
+          <a href="../free-zone-grade-a-facilities/"
             class="flex justify-center items-center images_card_div h-full px-8"
           >
             <h2 class="text-4xl font-inter font-bold text-white">
@@ -463,13 +380,13 @@
                 class="h-4"
               />
             </button>
-          </div>
+          </>
         </div>
       </section>
     </main>
 
     <footer
-      class="bg-dark_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
+      class="bg-light_blue_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
     >
       <div class="flex flex-col">
         <img src="../assets/logo.jpeg" alt="Logo" class="h-14 mb-8" />
@@ -483,7 +400,7 @@
       <div>
         <ul class="gap-2">
           <li>
-            <a href="./" class="font-inter text-white text-lg">Home</a>
+            <a href="../" class="font-inter text-white text-lg">Home</a>
           </li>
           <li>
             <a href="../about-us/" class="font-inter text-white text-lg"
@@ -491,22 +408,22 @@
             >
           </li>
           <li>
-            <a href="../solutions" class="font-inter text-white text-lg"
-              >Our Solutions</a
-            >
+            <a href="./" class="font-inter text-white text-lg">Our Solutions</a>
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg"
+            <a
+              href="../free-zone-grade-a-facilities/"
+              class="font-inter text-white text-lg"
               >Free Zone Grade-A Facilities</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg"
+            <a href="../contact-us/" class="font-inter text-white text-lg"
               >Contact Us</a
             >
           </li>
           <li>
-            <a href="../grade" class="font-inter text-white text-lg">Blog</a>
+            <a href="../blog/" class="font-inter text-white text-lg">Blog</a>
           </li>
         </ul>
       </div>

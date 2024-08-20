@@ -10,6 +10,13 @@
     background-repeat: no-repeat;
 }
 
+.about_us_background {
+    background-image: url('./assets/about-us-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .advert_div {
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -197,8 +204,9 @@
     /* roundness of the scroll thumb */
     /* border: 3px solid #D1D2D4; */
     /* creates padding around scroll thumb */
-    
-    border: 0.2em solid rgba(0, 0, 0, 0);  /* Transparent border together with `background-clip: padding-box` does the trick */
+
+    border: 0.2em solid rgba(0, 0, 0, 0);
+    /* Transparent border together with `background-clip: padding-box` does the trick */
     background-clip: padding-box;
     -webkit-border-radius: 0.5em;
     background-color: #D1D2D4;
