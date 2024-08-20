@@ -716,6 +716,18 @@ video {
   margin-top: 3rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
+}
+
+.ml-36 {
+  margin-left: 9rem;
+}
+
 .flex {
   display: flex;
 }
@@ -816,6 +828,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-full {
@@ -1013,6 +1029,18 @@ video {
   padding: 8rem;
 }
 
+.p-24 {
+  padding: 6rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1105,6 +1133,10 @@ video {
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -1417,6 +1449,14 @@ video {
     grid-column: span 1 / span 1;
   }
 
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
   .md\:row-span-2 {
     grid-row: span 2 / span 2;
   }
@@ -1453,6 +1493,14 @@ video {
     gap: 3rem;
   }
 
+  .md\:p-32 {
+    padding: 8rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -1471,6 +1519,10 @@ video {
   .md\:px-52 {
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .md\:text-end {
+    text-align: end;
   }
 }
 
@@ -1562,6 +1614,11 @@ video {
   .lg\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
+  }
+
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .lg\:text-start {
