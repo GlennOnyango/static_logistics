@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TY Logistics Park FZE</title>
+  </head>
+  <body>
+    <header
+      class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4"
+    >
+      <div class="flex justify-center items-center lg:hidden">
+        <button class="text-dark_text_para flex h-fit mobile-nav__toggle">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <img
+        src="../../assets/logo.jpeg"
+        alt="Logo"
+        class="w-36 h-14 hidden lg:flex"
+      />
+      <nav class="leading-12 hidden lg:flex">
+        <ul class="flex justify-center gap-8">
+          <li>
+            <a href="../../" class="font-inter text-lg">Home</a>
+          </li>
+          <li>
+            <a href="../../about-us/" class="font-inter text-lg">About Us</a>
+          </li>
+          <li>
+            <a href="../../solutions/" class="font-inter text-lg"
+              >Our Solutions</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../free-zone-grade-a-facilities/"
+              class="font-inter text-lg"
+              >Free Zone Grade-A Facilities</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center">
+        <a
+          class="bg-solutions_card font-inter px-4 py-2 w-fit h-fit text-dark_text_para rounded-md"
+          href="../../contact-us/"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <section
+      class="bg-third_tile_about text-dark_text_para h-screen px-4 mobile-nav hidden"
+    >
+      <ul class="gap-2 xl:gap-8">
+        <li>
+          <a href="../../" class="font-inter text-lg">Home</a>
+        </li>
+        <li>
+          <a href="../../about-us/" class="font-inter text-lg">About Us</a>
+        </li>
+        <li>
+          <a href="../../solutions/" class="font-inter text-lg"
+            >Our Solutions</a
+          >
+        </li>
+        <li>
+          <a
+            href="../../free-zone-grade-a-facilities/"
+            class="font-inter text-lg"
+            >Free Zone Grade-A Facilities</a
+          >
+        </li>
+      </ul>
+    </section>
+    <main class="main-body font-inter">
+      <!-- Image and advert -->
+      <section class="min-h-[45vh] advert">
+        <div
+          class="px-10 md:px-24 lg:px-36 xl:px-48 flex items-center min-h-[inherit] advert_div"
+        >
+          <h1 class="text-5xl font-bold text-white col-span-2 text-start">
+            Blog Article:
+          </h1>
+        </div>
+      </section>
+
+      <section
+        class="bg-third_tile_about blog_container p-16 text-dark_text_para flex flex-col items-center justify-center py-16"
+      >
+        <h1 class="text-5xl font-bold mb-12 title">Article not found</h1>
+      </section>
+
+      <!--Image cards-->
+
+      <section
+        class="min-h-[80vh] bg-dark_background grid grid-cols-2 grid-rows-3 md:grid-rows-2"
+      >
+        <div
+          class="col-span-2 md:col-span-1 row-span-1 about_us_card_background"
+        >
+          <a
+            href="../../about-us/"
+            class="flex justify-center items-center images_card_div h-full"
+          >
+            <h2 class="text-4xl font-inter font-bold text-white">
+              Previous Article
+            </h2>
+            <button class="px-4 sm:pt-2 text-white w-fit h-fit">
+              <img
+                src="../../assets/icons/Arrow 2.png"
+                alt="Direction"
+                class="h-4"
+              />
+            </button>
+          </a>
+        </div>
+        <div
+          class="col-span-2 md:col-span-1 row-span-1 md:row-span-2 contact_us_card_background"
+        >
+          <a
+            href="../../contact-us/"
+            class="flex justify-center items-center images_card_div h-full"
+          >
+            <h2 class="text-4xl font-inter font-bold text-white">Contact Us</h2>
+            <button class="px-4 sm:pt-2 text-white w-fit h-fit">
+              <img
+                src="../../assets/icons/Arrow 2.png"
+                alt="Direction"
+                class="h-4"
+              />
+            </button>
+          </a>
+        </div>
+        <div
+          class="col-span-2 md:col-span-1 row-span-1 free_zone_card_background"
+        >
+          <a
+            href="../../free-zone-grade-a-facilities/"
+            class="flex justify-center items-center images_card_div h-full px-8"
+          >
+            <h2 class="text-4xl font-inter font-bold text-white">
+              Next Article
+            </h2>
+
+            <button class="px-4 sm:pt-2 text-white w-fit h-fit">
+              <img
+                src="../../assets/icons/Arrow 2.png"
+                alt="Direction"
+                class="h-4"
+              />
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-light_blue_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
+    >
+      <div class="flex flex-col">
+        <img
+          src="../../assets/logo.jpeg"
+          alt="Logo"
+          class="h-14 mb-8"
+          loading="lazy"
+        />
+        <h5 class="text-white text-start font-inter text-lg">
+          TY Logistics Park FZE
+        </h5>
+
+        <h5 class="text-white text-start font-inter text-lg">Copyright 2024</h5>
+      </div>
+
+      <div>
+        <ul class="gap-2">
+          <li>
+            <a href="../../" class="font-inter text-white text-lg">Home</a>
+          </li>
+          <li>
+            <a href="../../about-us/" class="font-inter text-white text-lg"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="../../solutions/" class="font-inter text-white text-lg"
+              >Our Solutions</a
+            >
+          </li>
+          <li>
+            <a
+              href="../../free-zone-grade-a-facilities/"
+              class="font-inter text-white text-lg"
+              >Free Zone Grade-A Facilities</a
+            >
+          </li>
+          <li>
+            <a href="../../contact-us/" class="font-inter text-white text-lg"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="../../blog/" class="font-inter text-white text-lg">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-row gap-4 mb-10">
+          <img
+            src="../../assets/vectors/xVector.png"
+            alt="Phone"
+            class="h-8"
+            loading="lazy"
+          />
+          <img
+            src="../../assets/vectors/lVector.png"
+            alt="Phone"
+            class="h-8"
+            loading="lazy"
+          />
+        </div>
+
+        <h5 class="text-white text-start font-inter text-lg">Group Company:</h5>
+        <h5 class="text-white text-start font-inter text-lg mb-6">
+          Nal Comet shipping
+        </h5>
+
+        <h5 class="text-white text-start font-inter text-lg">
+          Cookie & Privacy Policy
+        </h5>
+      </div>
+    </footer>
+
+    <script src="../../js/mobile-nav.js"></script>
+    <script src="../../js/article.js"></script>
+  </body>
+</html>
