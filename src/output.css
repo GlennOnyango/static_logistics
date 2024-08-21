@@ -626,6 +626,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -672,10 +676,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .flex {
@@ -763,6 +763,10 @@ video {
   min-height: inherit;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -774,14 +778,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .list-disc {
@@ -927,12 +923,12 @@ video {
   padding: 0.25rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-16 {
   padding: 4rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-10 {
@@ -1092,21 +1088,21 @@ video {
 }
 
 .advert {
-  background-image: url('./assets/home_advert.png');
+  background-image: url('./assets/images/home_advert.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_background {
-  background-image: url('./assets/about-us-background.png');
+  background-image: url('./assets/images/about-us-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .blog_background {
-  background-image: url('./assets/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
+  background-image: url('./assets/images/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1117,7 +1113,7 @@ video {
 }
 
 .kind_background {
-  background-image: url('./assets/kind_img.png');
+  background-image: url('./assets/images/kind_img.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1131,42 +1127,42 @@ video {
 /*solutions cards*/
 
 .storage_background {
-  background-image: url('./assets/solutions/warehouse.jpeg');
+  background-image: url('./assets/images/warehouse.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .wms_background {
-  background-image: url('./assets/solutions/wms.jpeg');
+  background-image: url('./assets/images/wms.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pick_background {
-  background-image: url('./assets/solutions/pick&pack.png');
+  background-image: url('./assets/images/pick&pack.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .last_mile_background {
-  background-image: url('./assets/solutions/last_mile.png');
+  background-image: url('./assets/images/last_mile.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .free_zone_background {
-  background-image: url('./assets/solutions/free_zone.jpeg');
+  background-image: url('./assets/images/free_zone.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .warehouse_background {
-  background-image: url('./assets/solutions/warehouse.jpeg');
+  background-image: url('./assets/images/warehouse.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1179,21 +1175,21 @@ video {
 /*image cards*/
 
 .about_us_card_background {
-  background-image: url('./assets/image-cards/about_us.jpeg');
+  background-image: url('./assets/images/about_us.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .contact_us_card_background {
-  background-image: url('./assets/image-cards/contact_us.jpeg');
+  background-image: url('./assets/images/contact_us.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .free_zone_card_background {
-  background-image: url('./assets/image-cards/free_image.png');
+  background-image: url('./assets/images/free_image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1202,63 +1198,63 @@ video {
 /*about us*/
 
 .about_us_fmcg_background {
-  background-image: url('./assets/sector-cards/fmcg.png');
+  background-image: url('./assets/images/fmcg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_agri_background {
-  background-image: url('./assets/sector-cards/Agri.png');
+  background-image: url('./assets/images/Agri.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_health_background {
-  background-image: url('./assets/sector-cards/health.png');
+  background-image: url('./assets/images/health.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_electron_background {
-  background-image: url('./assets/sector-cards/electron.png');
+  background-image: url('./assets/images/electron.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_fashion_background {
-  background-image: url('./assets/sector-cards/fashion.png');
+  background-image: url('./assets/images/fashion.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_automotive_background {
-  background-image: url('./assets/sector-cards/automotive.png');
+  background-image: url('./assets/images/automotive.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_construction_background {
-  background-image: url('./assets/sector-cards/construction.png');
+  background-image: url('./assets/images/construction.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_chemical_background {
-  background-image: url('./assets/sector-cards/checmical.png');
+  background-image: url('./assets/images/checmical.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_oil_background {
-  background-image: url('./assets/sector-cards/oil.png');
+  background-image: url('./assets/images/oil.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1271,7 +1267,7 @@ video {
 /*free-zone-grade-a-facilities*/
 
 .free_zone {
-  background-image: url('./assets/free-zone/freezonediv.png');
+  background-image: url('./assets/images/freezonediv.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1488,11 +1484,6 @@ video {
   .xl\:px-48 {
     padding-left: 12rem;
     padding-right: 12rem;
-  }
-
-  .xl\:px-56 {
-    padding-left: 14rem;
-    padding-right: 14rem;
   }
 
   .xl\:leading-\[1\.7rem\] {

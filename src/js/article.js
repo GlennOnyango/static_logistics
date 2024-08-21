@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const article_object = {
     article_2: {
       name: "Article 2",
-      image_url: "../../assets/blogs/about-us-background.png",
+      image_url: "../../assets/images/about-us-background.png",
       content: [
         `Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     article_3: {
       name: "Article 3",
-      image_url: "../../assets/blogs/free_image.png",
+      image_url: "../../assets/images/free_image.png",
       content: [
         `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     article_4: {
       name: "Article 4",
-      image_url: "../../assets/blogs/rfsmart_1_partner 2.png",
+      image_url: "../../assets/images/rfsmart_1_partner 2.png",
       content: [
         `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     article_5: {
       name: "Article 5",
-      image_url: "../../assets/blogs/why_logistics.jpeg",
+      image_url: "../../assets/images/why_logistics.jpeg",
       content: [
         `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     article_6: {
       name: "Article 2",
-      image_url: "../../assets/blogs/about-us-background.png",
+      image_url: "../../assets/images/about-us-background.png",
       content: [
         `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     article_7: {
       name: "Article 2",
-      image_url: "../../assets/blogs/about-us-background.png",
+      image_url: "../../assets/images/about-us-background.png",
       content: [
         `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     article_8: {
       name: "Article 2",
-      image_url: "../../assets/blogs/about-us-background.png",
+      image_url: "../../assets/images/about-us-background.png",
       content: [
         `Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -271,5 +271,4 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector(".blog_container").appendChild(para);
     });
   }
-  
 });
