@@ -554,40 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1088,21 +1054,21 @@ video {
 }
 
 .advert {
-  background-image: url('./assets/images/home_advert.png');
+  background-image: url('./assets/images/home/World\ class\ Free\ Zone\ Contract\ Logistics\ in\ Nigeria\ &\ West\ Africa.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_background {
-  background-image: url('./assets/images/about-us-background.png');
+  background-image: url('./assets/images/about_us/about\ us\ hero.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .blog_background {
-  background-image: url('./assets/images/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
+  background-image: url('./assets/images/blog/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1113,7 +1079,7 @@ video {
 }
 
 .kind_background {
-  background-image: url('./assets/images/kind_img.png');
+  background-image: url('./assets/images/home/home\ first\ of\ its\ kind\ in\ Nigeria.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1127,42 +1093,42 @@ video {
 /*solutions cards*/
 
 .storage_background {
-  background-image: url('./assets/images/warehouse.jpeg');
+  background-image: url('./assets/images/Services/services_storage\ &\ handling\ nigeria.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .wms_background {
-  background-image: url('./assets/images/wms.jpeg');
+  background-image: url('./assets/images/Services/services_WMS\ Based\ Inventory\ Management\ nigeria\ -\ Copy.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .pick_background {
-  background-image: url('./assets/images/pick&pack.png');
+  background-image: url('./assets/images/Services/services_Pick\,\ Pack\ &\ Value\ Added\ Services\ \(VAS\)\ in\ nigeria.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .last_mile_background {
-  background-image: url('./assets/images/last_mile.png');
+  background-image: url('./assets/images/Services/services_Last\ Mile\ Distribution\ in\ nigeria.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .free_zone_background {
-  background-image: url('./assets/images/free_zone.jpeg');
+  background-image: url('./assets/images/Services/services_Free\ Zone\ &\ Importer\ of\ Record\ \(IOR\)\ Services\ in\ nigeria.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .warehouse_background {
-  background-image: url('./assets/images/warehouse.jpeg');
+  background-image: url('./assets/images/Services/services_Site\ Management\ Solutions\ in\ nigeria.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1175,21 +1141,21 @@ video {
 /*image cards*/
 
 .about_us_card_background {
-  background-image: url('./assets/images/about_us.jpeg');
+  background-image: url('./assets/images/footer/We\ are\ a\ TY\ Holding’s\ contract\ logistics\ flagship\ business.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .contact_us_card_background {
-  background-image: url('./assets/images/contact_us.jpeg');
+  background-image: url('./assets/images/footer/footer.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .free_zone_card_background {
-  background-image: url('./assets/images/free_image.png');
+  background-image: url('./assets/images/footer/Footer.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1198,63 +1164,63 @@ video {
 /*about us*/
 
 .about_us_fmcg_background {
-  background-image: url('./assets/images/fmcg.png');
+  background-image: url('./assets/images/Sectors/sector\ food\ &\ fmcg.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_agri_background {
-  background-image: url('./assets/images/Agri.png');
+  background-image: url('./assets/images/Sectors/sector\ agric\ &\ perishables.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_health_background {
-  background-image: url('./assets/images/health.png');
+  background-image: url('./assets/images/Sectors/sector\ healthcare.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_electron_background {
-  background-image: url('./assets/images/electron.png');
+  background-image: url('./assets/images/Sectors/sector\ Electronics\ &\ Electrical.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_fashion_background {
-  background-image: url('./assets/images/fashion.png');
+  background-image: url('./assets/images/Sectors/sector\ Fashion\ &\ Apparel.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_automotive_background {
-  background-image: url('./assets/images/automotive.png');
+  background-image: url('./assets/images/Sectors/sector\ Automotive\ &\ Parts\ Management.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_construction_background {
-  background-image: url('./assets/images/construction.png');
+  background-image: url('./assets/images/Sectors/sector\ construction.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_chemical_background {
-  background-image: url('./assets/images/checmical.png');
+  background-image: url('./assets/images/Sectors/sector\ Chemical.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .about_us_oil_background {
-  background-image: url('./assets/images/oil.png');
+  background-image: url('./assets/images/Sectors/sector\ mining\ a.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1267,7 +1233,7 @@ video {
 /*free-zone-grade-a-facilities*/
 
 .free_zone {
-  background-image: url('./assets/images/freezonediv.png');
+  background-image: url('./assets/images/free_zone/free\ zone\ hero\ a.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1297,6 +1263,71 @@ video {
   -webkit-border-radius: 0.5em;
   background-color: #D1D2D4;
   -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.025);
+}
+
+/*Articles*/
+
+.article_2 {
+  background-image: url('./assets/images/articles/Article\ 2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_3 {
+  background-image: url('./assets/images/articles/article\ 3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_4 {
+  background-image: url('./assets/images/articles/article\ 4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_5 {
+  background-image: url('./assets/images/articles/article\ 5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_6 {
+  background-image: url('./assets/images/articles/Article\ 6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_7 {
+  background-image: url('./assets/images/articles/article\ 7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_8 {
+  background-image: url('./assets/images/articles/article\ 8.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_9 {
+  background-image: url('./assets/images/articles/article\ 9.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.article_many {
+  background-image: url('./assets/images/articles/Article....jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 640px) {
