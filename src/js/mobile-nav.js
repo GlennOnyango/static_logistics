@@ -16,4 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".footer-ext").classList.add("hidden");
       }
     });
+
+
 });
