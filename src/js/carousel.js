@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   change_vector = (current_id) => {
     document.querySelectorAll(".vector_change").forEach((e) => {
       if (current_id === e.id) {
-        console.log(e.id);
         //update vector color
         document.querySelector(`#${e.id}`).classList.remove("fill-white");
 
