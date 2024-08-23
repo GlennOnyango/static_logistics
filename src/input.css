@@ -25,6 +25,75 @@
 
 }
 
+/*Carousel images*/
+#advert {
+    background-image: url('./assets/images/home/World\ class\ Free\ Zone\ Contract\ Logistics\ in\ Nigeria\ &\ West\ Africa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* animation-name: change;
+    animation-play-state: running;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes change {
+    /* 0% {
+        background-image: url('./assets/images/about_us/about\ us\ hero.JPG');
+
+    } */
+
+    20% {
+        background-image: url('./assets/images/home/home\ first\ of\ its\ kind\ in\ Nigeria.jpg');
+
+    }
+
+    40% {
+        background-image: url('./assets/images/blog/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
+    }
+
+    /* 60% {
+        background-image: url('./assets/images/home/World\ class\ Free\ Zone\ Contract\ Logistics\ in\ Nigeria\ &\ West\ Africa.jpg');
+
+    } */
+
+    80% {
+        background-image: url('./assets/images/about_us/about\ us\ hero.JPG');
+
+    }
+
+    100% {
+        background-image: url('./assets/images/blog/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
+
+    }
+}
+
+#about_us_background {
+    background-image: url('./assets/images/about_us/about\ us\ hero.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#kind_background {
+    background-image: url('./assets/images/home/home\ first\ of\ its\ kind\ in\ Nigeria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#blog_background {
+    background-image: url('./assets/images/blog/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
 .advert_div {
     background-color: rgba(0, 0, 0, 0.4);
 }
