@@ -713,6 +713,22 @@ video {
   height: 50vh;
 }
 
+.h-\[70vh\] {
+  height: 70vh;
+}
+
+.h-\[55vh\] {
+  height: 55vh;
+}
+
+.h-\[60vh\] {
+  height: 60vh;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .min-h-\[45vh\] {
   min-height: 45vh;
 }
