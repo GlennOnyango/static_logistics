@@ -22,7 +22,7 @@ const carousel_ids_object = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  let timeInterval = 10000;
+  let timeInterval = 5000;
   let intervalfn = () => {
     let id_item = document.querySelector(".carsouel_div").id;
     let current_idx = carousel_ids.indexOf(id_item);
