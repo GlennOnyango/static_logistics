@@ -910,6 +910,14 @@ video {
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
+.fill-blue-500 {
+  fill: #3b82f6;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;

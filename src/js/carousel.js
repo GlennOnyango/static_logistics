@@ -37,9 +37,29 @@ document.addEventListener("DOMContentLoaded", () => {
     //update text
     document.querySelector(".carousel_text").textContent =
       carousel_ids_object[carousel_ids[current_idx]].title;
+
+    change_vector(`${carousel_ids[current_idx]}_presser`);
   };
 
   let carousel_time = setInterval(intervalfn, timeInterval);
+
+  //change vector fill
+  change_vector = (current_id) => {
+    document.querySelectorAll(".vector_change").forEach((e) => {
+      if (current_id === e.id) {
+        console.log(e.id);
+        //update vector color
+        document.querySelector(`#${e.id}`).classList.remove("fill-white");
+
+        document.querySelector(`#${e.id}`).classList.add("fill-blue-500");
+      } else {
+        //update vector color
+        document.querySelector(`#${e.id}`).classList.remove("fill-blue");
+
+        document.querySelector(`#${e.id}`).classList.add("fill-white");
+      }
+    });
+  };
 
   const kind_background_presser = document.querySelector(
     "#kind_background_presser"
@@ -62,6 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".carousel_text").textContent =
       carousel_ids_object.advert.title;
 
+    change_vector("advert_presser");
+
     clearInterval(carousel_time);
     carousel_time = setInterval(intervalfn, timeInterval);
   });
@@ -71,6 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
     //update text
     document.querySelector(".carousel_text").textContent =
       carousel_ids_object.kind_background.title;
+
+    change_vector("kind_background_presser");
 
     clearInterval(carousel_time);
     carousel_time = setInterval(intervalfn, timeInterval);
@@ -82,6 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".carousel_text").textContent =
       carousel_ids_object.blog_background.title;
 
+    change_vector("blog_background_presser");
+
     clearInterval(carousel_time);
     carousel_time = setInterval(intervalfn, timeInterval);
   });
@@ -91,6 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
     //update text
     document.querySelector(".carousel_text").textContent =
       carousel_ids_object.about_us_background.title;
+
+    change_vector("about_us_background_presser");
 
     clearInterval(carousel_time);
     carousel_time = setInterval(intervalfn, timeInterval);
