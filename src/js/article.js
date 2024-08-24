@@ -334,7 +334,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const node = document.createTextNode(e);
       para.appendChild(node);
 
-      para.classList.add("text-2xl", "mb-4", "w-3/4");
+      para.classList.add("text-2xl", "mb-4", "font-light", "w-3/4");
 
       document.querySelector(".blog_container").appendChild(para);
     });
