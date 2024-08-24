@@ -1016,10 +1016,6 @@ video {
   text-align: start;
 }
 
-.font-inter {
-  font-family: Inter;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1123,6 +1119,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body {
+  font-family: Inter;
+}
+
 .advert {
   background-image: url('./assets/images/home/World\ class\ Free\ Zone\ Contract\ Logistics\ in\ Nigeria\ &\ West\ Africa.jpg');
   background-size: cover;
@@ -1208,7 +1208,7 @@ video {
 }
 
 .advert_div {
-  background-image: linear-gradient(to right, rgba(0, 60, 255, 0.3), rgba(0, 60, 255,0.1));
+  background-image: linear-gradient(to right, rgba(0, 60, 255, 0.3), rgba(0, 60, 255, 0.1));
 }
 
 .kind_background {
