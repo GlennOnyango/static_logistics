@@ -55,7 +55,7 @@ nav ul li a {
 /*Carousel images*/
 #advert {
     background-image: url('./assets/images/home/World\ class\ Free\ Zone\ Contract\ Logistics\ in\ Nigeria\ &\ West\ Africa.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -99,14 +99,14 @@ nav ul li a {
 
 #about_us_background {
     background-image: url('./assets/images/about_us/about\ us\ hero.JPG');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #kind_background {
     background-image: url('./assets/images/home/home\ first\ of\ its\ kind\ in\ Nigeria.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -114,7 +114,7 @@ nav ul li a {
 
 #blog_background {
     background-image: url('./assets/images/blog/adrian-sulyok-InMD-APxayI-unsplash\ 1.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 
