@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (isHidden) {
         document.querySelector(".main-body").classList.remove("hidden");
+        document.querySelector("#img_section").classList.remove("hidden");
         document.querySelector(".footer-ext").classList.remove("hidden");
       } else {
         document.querySelector(".main-body").classList.add("hidden");
+        document.querySelector("#img_section").classList.add("hidden");
         document.querySelector(".footer-ext").classList.add("hidden");
       }
     });
-
-
 });
