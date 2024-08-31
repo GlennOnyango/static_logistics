@@ -5,6 +5,14 @@
 
 include '../../php/config/db_connection.php';
 
+session_start();
+
+
+if (!$_SESSION["user_id"]) {
+  header("Location: ../../admin/");
+  exit;
+}
+
 // define variables and set to empty values
 $email = $first_name = $last_name = $password = $error = "";
 

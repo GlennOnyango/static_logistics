@@ -5,6 +5,15 @@
 
 include '../php/config/db_connection.php';
 
+
+session_start();
+
+
+if (!$_SESSION["user_id"]) {
+  header("Location: ../admin/");
+  exit;
+}
+
 if ($_SERVER["REQUEST_METHOD"] === "GET") {
   // Prepare the SQL statement with placeholders
   $sql = "SELECT * FROM users";

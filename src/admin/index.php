@@ -10,9 +10,6 @@ session_start();
 // define variables and set to empty values
 $email = $password = $error = "";
 
-print_r(count($_SESSION));
-
-
 
 if (count($_SESSION) > 0) {
   if ($_SESSION["user_id"]) {
