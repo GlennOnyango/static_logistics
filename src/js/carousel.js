@@ -8,16 +8,16 @@ const carousel_ids = [
 const carousel_ids_object = {
   kind_background: {
     title:
-      "Free Zone Logistics Hub: Gate Way to Nigeria and the West African Region",
+      "WMS Systems Driven Operations  in Nigeria & West Africa",
   },
   blog_background: {
-    title: "First of its Kind in Nigeria and West Africa.",
+    title: "Free Zone Value Added Services & Importer of Record Solutions",
   },
   about_us_background: {
-    title: "We are a TY Holding’s contract logistics flagship business",
+    title: "Last Mile Transport & Distribution Solutions in the Region",
   },
   advert: {
-    title: "World class Free Zone Contract Logistics in Nigeria & West Africa.",
+    title: "World class Free Zone Contract Logistics in Nigeria & West Africa",
   },
 };
 
