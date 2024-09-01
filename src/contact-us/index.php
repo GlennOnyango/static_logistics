@@ -162,7 +162,7 @@ function test_input($data)
             Message
           </label>
           <textarea name="message" id="message" required
-            class="h-48 rounded-md col-span-3 md:col-span-2 mb-4 px-4 text-dark_background">  </textarea>
+            class="h-48 rounded-md col-span-3 md:col-span-2 mb-4 p-4 text-dark_background">  </textarea>
 
           <button type="submit"
             class="bg-blue_background text-2xl font-semibold px-4 py-2 border-4 w-fit h-fit rounded-md md:col-start-2 md:col-span-2 col-span-3 mt-4 mb-12">
