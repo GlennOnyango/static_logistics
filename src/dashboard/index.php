@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
       <a href="./" class="w-full flex justify-center py-4 bg-yellow-300">
         <h2 class="font-semibold text-lg">Users</h2>
       </a>
-      <a href="./blog/" class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
+      <a href="./blogs/" class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
         <h2 class="font-semibold text-lg">Blogs</h2>
       </a>
       <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
