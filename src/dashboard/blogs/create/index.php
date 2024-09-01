@@ -144,7 +144,9 @@ function uploadImage($file, $path, $user_id)
             <a href="../" class="w-full flex justify-center mt-1 bg-yellow-300 py-4" id="activate_blog">
                 <h2 class="font-semibold text-lg">Blogs</h2>
             </a>
-            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
+
+            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4 cursor-pointer"
+                id="logout">
                 <h2 class="font-semibold text-lg">Logout</h2>
             </div>
         </div>
@@ -227,6 +229,7 @@ function uploadImage($file, $path, $user_id)
     </section>
 
     <script src="../../../js/dashboard/controller.js"></script>
+    <script src="../../../js/dashboard/logout.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@ session_start();
 
 
 if (!$_SESSION["user_id"]) {
-    header("Location: ../admin/");
+    header("Location: ../../admin/");
     exit;
 }
 
@@ -57,7 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
             <a href="./" class="w-full flex justify-center mt-1 bg-yellow-300 py-4">
                 <h2 class="font-semibold text-lg">Blogs</h2>
             </a>
-            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
+            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4 cursor-pointer"
+                id="logout">
                 <h2 class="font-semibold text-lg">Logout</h2>
             </div>
         </div>
@@ -108,6 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
     </section>
 
     <script src="../../js/dashboard/controller.js"></script>
+    <script src="../../js/dashboard/logout.js"></script>
 </body>
 
 </html>

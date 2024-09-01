@@ -92,9 +92,11 @@ function test_input($data)
       <a href="../blog/" class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
         <h2 class="font-semibold text-lg">Blogs</h2>
       </a>
-      <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
-        <h2 class="font-semibold text-lg">Logout</h2>
-      </div>
+      
+      <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4 cursor-pointer"
+                id="logout">
+                <h2 class="font-semibold text-lg">Logout</h2>
+            </div>
     </div>
 
     <div class="grow bg-yellow-300 justify-center flex overflow-y-auto pt-8">
@@ -158,7 +160,8 @@ function test_input($data)
     </div>
   </section>
 
-  <script src="../js/dashboard/controller.js"></script>
+  <script src="../../js/dashboard/controller.js"></script>
+  <script src="../../js/dashboard/logout.js"></script>
 </body>
 
 </html>

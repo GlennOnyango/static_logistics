@@ -1,28 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // document.querySelector("#cancel").addEventListener("click", () => {
-  //   document.querySelector("#user_form").classList.add("hidden");
-  //   document.querySelector("#user_table").classList.remove("hidden");
-  // });
-
-  // document
-  //   .querySelector("#show_add_user_form")
-  //   .addEventListener("click", () => {
-  //     document.querySelector("#user_form").classList.remove("hidden");
-  //     document.querySelector("#user_table").classList.add("hidden");
-  //   });
-
-  //activation
-
-  // document.querySelector("#activate_user").addEventListener("click", () => {
-  //   document.querySelector("#user_div").classList.remove("hidden");
-  //   document.querySelector("#blog_div").classList.add("hidden");
-  // });
-
-  // document.querySelector("#activate_blog").addEventListener("click", () => {
-  //   document.querySelector("#blog_div").classList.remove("hidden");
-  //   document.querySelector("#user_div").classList.add("hidden");
-  // });
-
   //check if blog image is uploaded
   document.querySelector("#blog_image").addEventListener("change", (e) => {
     const file = e.target.files[0];
@@ -46,4 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     reader.readAsDataURL(file);
   });
+
 });

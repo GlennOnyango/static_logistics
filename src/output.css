@@ -802,6 +802,14 @@ video {
   border-collapse: collapse;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
 .list-disc {
   list-style-type: disc;
 }

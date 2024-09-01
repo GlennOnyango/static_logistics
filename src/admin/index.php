@@ -101,20 +101,20 @@ function test_input($data)
         <nav class="leading-12 hidden lg:flex">
           <ul class="flex justify-center gap-8">
             <li>
-              <a href="./">Home</a>
+              <a href="../">Home</a>
             </li>
             <li>
-              <a href="./about-us/">About Us</a>
+              <a href="../about-us/">About Us</a>
             </li>
             <li>
-              <a href="./solutions/">Our Solutions</a>
+              <a href="../solutions/">Our Solutions</a>
             </li>
             <li>
-              <a href="./free-zone-grade-a-facilities/">Free Zone Grade-A Facilities</a>
+              <a href="../free-zone-grade-a-facilities/">Free Zone Grade-A Facilities</a>
             </li>
 
             <li>
-              <a href="./blog/">Blog</a>
+              <a href="../blog/">Blog</a>
             </li>
           </ul>
         </nav>
