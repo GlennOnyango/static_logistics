@@ -279,7 +279,6 @@ function test_input($data)
   </footer>
 
   <script src="../../js/mobile-nav.js"></script>
-  <script src="../../js/article.js"></script>
 </body>
 
 </html>

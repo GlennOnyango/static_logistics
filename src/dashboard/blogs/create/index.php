@@ -25,6 +25,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $image = uploadImage($_FILES["image"], "../../../assets/images/blog/uploads/", $user_id);
 
     if ($image) {
+
+
+        // Replace multiple newlines with a single newline
+        $description = preg_replace('/\n{2,}/', "\n", $details);
+
+        //replace all newlines with two <br> tags
+
+        $description = str_replace("\n", "<br><br>", $description);
+
         // Prepare the SQL statement with placeholders
         $sql = "INSERT INTO blog (user_id, title, image_url, details) VALUES (?, ?, ?, ?)";
 
@@ -32,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt = $conn->prepare($sql);
 
         // Bind parameters to the statement
-        $stmt->bind_param("isss", $user_id, $title, $image, $details);
+        $stmt->bind_param("isss", $user_id, $title, $image, $description);
 
         // Execute the statement
 
@@ -194,7 +203,8 @@ function uploadImage($file, $path, $user_id)
                         </div>
 
                         <div class="h-96 w-full bg-gray-200 relative" id="blog_img_div">
-                            <input type="file" id="blog_image" name="image" required accept="image/png, image/gif, image/jpeg"
+                            <input type="file" id="blog_image" name="image" required
+                                accept="image/png, image/gif, image/jpeg"
                                 class="bg-gray-200 py-2 pl-4 rounded-md absolute top-0 h-full w-full opacity-0"
                                 placeholder="Enter user first name" />
                             <div class="w-full h-full flex flex-col justify-center items-center">

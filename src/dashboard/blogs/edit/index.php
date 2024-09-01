@@ -71,6 +71,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $image = uploadImage($_FILES["image"], "../../../assets/images/blog/uploads/", $user_id);
 
         if ($image) {
+
+
+            // Replace multiple newlines with a single newline
+            $description = preg_replace('/\n{2,}/', "\n", $details);
+
+            //replace all newlines with two <br> tags
+
+            $description = str_replace("\n", "<br><br>", $description);
+
+
             // Prepare the SQL statement with placeholders
             $sql = "UPDATE blog SET title = ?, image_url = ?, details = ? WHERE id = ? AND user_id = ?";
 
@@ -78,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $stmt = $conn->prepare($sql);
 
             // Bind parameters to the statement
-            $stmt->bind_param("sssii", $title, $image, $details, $article_id, $user_id);
+            $stmt->bind_param("sssii", $title, $image, $description, $article_id, $user_id);
 
             // Execute the statement
 
@@ -98,11 +108,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } else {
         $sql = "UPDATE blog SET title = ?, details = ? WHERE id = ? AND user_id = ?";
 
+        // Replace multiple newlines with a single newline
+        $description = preg_replace('/\n{2,}/', "\n", $details);
+
+        //replace all newlines with two <br> tags
+
+        $description = str_replace("\n", "<br><br>", $description);
+
+
         // Create a prepared statement
         $stmt = $conn->prepare($sql);
 
         // Bind parameters to the statement
-        $stmt->bind_param("ssii", $title, $details, $article_id, $user_id);
+        $stmt->bind_param("ssii", $title, $description, $article_id, $user_id);
 
         // Execute the statement
 
@@ -255,6 +273,10 @@ function uploadImage($file, $path, $user_id)
                                 $details = $row["details"];
                                 $img_url = $row["image_url"];
                                 $article_id = $row["id"];
+
+
+                                //replace <br> tags with newlines
+                                $details = str_replace("<br><br>", "\n", $details);
 
 
                                 echo "
