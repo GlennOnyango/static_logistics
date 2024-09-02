@@ -41,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
   // Get the result set
   $result = $stmt->get_result();
 
+
 }
 
 
@@ -148,9 +149,6 @@ function test_input($data)
     <section
       class="bg-third_tile_about blog_container p-16 text-dark_text_para flex flex-col items-center justify-center py-16">
 
-
-
-
       <?php
       if ($result->num_rows > 0) {
         if ($result->num_rows > 0) {
@@ -192,12 +190,48 @@ function test_input($data)
 
     <section class="min-h-[80vh] bg-dark_background grid grid-cols-2 grid-rows-3 md:grid-rows-2">
       <div class="col-span-2 md:col-span-1 row-span-1 about_us_card_background">
-        <a href="../../about-us/" class="flex justify-center items-center images_card_div h-full">
-          <h2 class="text-4xl font-bold text-white">Previous Article</h2>
-          <button class="px-4 sm:pt-2 text-white w-fit h-fit">
-            <img src="../../assets/images/Arrow 2.png" alt="Direction" class="h-4" />
+
+
+
+        <?php
+
+        // Prepare the SQL statement with placeholders
+        $sql = "SELECT * FROM blog";
+
+        // Create a prepared statement
+        $stmt = $conn->prepare($sql);
+
+        $result_blogs = $conn->query($sql);
+
+
+        $previousId = 1;
+
+        if ($desiredId > 1) {
+
+
+          $previousId = $desiredId - 1;
+
+          echo " <a href='./?article_id=$previousId' class='flex justify-center items-center images_card_div h-full'>
+          <h2 class='text-4xl font-bold text-white'>Previous Article</h2>
+          <button class='px-4 sm:pt-2 text-white w-fit h-fit'>
+            <img src='../../assets/images/Arrow 2.png' alt='Direction' class='h-4' />
           </button>
         </a>
+";
+
+        } else {
+
+          echo " <a class='flex justify-center items-center images_card_div h-full'>
+          <h2 class='text-4xl font-bold text-white'>No Previous Article</h2>
+          
+        </a>
+";
+        }
+
+
+        ?>
+
+
       </div>
       <div class="col-span-2 md:col-span-1 row-span-1 md:row-span-2 contact_us_card_background">
         <a href="../../contact-us/" class="flex justify-center items-center images_card_div h-full">
@@ -208,14 +242,49 @@ function test_input($data)
         </a>
       </div>
       <div class="col-span-2 md:col-span-1 row-span-1 free_zone_card_background">
-        <a href="../../free-zone-grade-a-facilities/"
-          class="flex justify-center items-center images_card_div h-full px-8">
-          <h2 class="text-4xl font-bold text-white">Next Article</h2>
 
-          <button class="px-4 sm:pt-2 text-white w-fit h-fit">
-            <img src="../../assets/images/Arrow 2.png" alt="Direction" class="h-4" />
-          </button>
-        </a>
+
+        <?php
+
+        // Prepare the SQL statement with placeholders
+        $sql = "SELECT * FROM blog";
+
+        // Create a prepared statement
+        $stmt = $conn->prepare($sql);
+
+        $result_blogs = $conn->query($sql);
+
+
+        $blog_count = $result_blogs->num_rows;
+
+
+        if ($desiredId < $blog_count) {
+
+          $nextId = $desiredId + 1;
+
+
+          echo " <a href='./?article_id=$nextId' class='flex justify-center items-center images_card_div h-full'>
+  <h2 class='text-4xl font-bold text-white'>Next Article</h2>
+  <button class='px-4 sm:pt-2 text-white w-fit h-fit'>
+    <img src='../../assets/images/Arrow 2.png' alt='Direction' class='h-4' />
+  </button>
+</a>
+";
+
+        } else {
+
+          echo " <a class='flex justify-center items-center images_card_div h-full'>
+  <h2 class='text-4xl font-bold text-white'>No Next Article</h2>
+  
+</a>
+";
+        }
+
+
+        ?>
+
+
+
       </div>
     </section>
   </main>
@@ -279,8 +348,8 @@ function test_input($data)
 
 
       <a href="../../cookie-policy/" class="text-white text-start text-base font-normal">
-          Cookie & Privacy Policy
-        </a>
+        Cookie & Privacy Policy
+      </a>
     </div>
   </footer>
 
