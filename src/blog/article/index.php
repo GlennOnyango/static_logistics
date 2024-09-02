@@ -169,7 +169,7 @@ function test_input($data)
 
 
             echo "
-            <h1 class='text-5xl font-bold mb-12 title'>$title</h1>
+            <h1 class='text-5xl font-bold mb-12 title text-center'>$title</h1>
             <img src='$img_url' alt='Article Image' class='mb-16 w-3/4' />
             <p class='text-2xl mb-4 font-light w-3/4'>$details</p>
             ";
