@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
             </div>
         </div>
 
-        <div class="grow bg-light_blue_background grid grid-cols-3 text-white text-5xl overflow-y-auto p-4 gap-4">
+        <div class="w-3/4 bg-light_blue_background grid grid-cols-3 text-white text-5xl overflow-y-auto p-4 gap-4">
 
             <div class="col-span-3 flex flex-row justify-between h-fit mb-4">
                 <h1 class="text-4xl font-[350] ">Blogs</h1>
