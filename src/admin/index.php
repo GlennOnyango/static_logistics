@@ -121,7 +121,7 @@ function test_input($data)
 
         <div class="flex items-center">
           <a class="contact-btn bg-gray_background text-white flex flex-row justify-center items-center gap-4 px-4 py-2 w-fit h-fit text-dark_text_para rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-            href="./contact-us/">Contact Us
+            href="../contact-us/">Contact Us
 
             <svg width="20" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -153,7 +153,7 @@ function test_input($data)
         </ul>
       </section>
     </div>
-    <div class="grow bg-yellow-300 justify-center items-center flex flex-col ">
+    <div class="grow bg-light_blue_background justify-center items-center flex flex-col ">
 
       <form method="post" action="./" class="bg-white w-1/3 px-4  ">
 
@@ -178,7 +178,7 @@ function test_input($data)
             placeholder="**********">
         </div>
         <div class="flex justify-center mb-4">
-          <button type="submit" class="bg-dark_background mt-4 px-4 text-white h-10 rounded-md w-fit">Login</button>
+          <button type="submit" class="bg-dark_background hover:bg-light_blue_background mt-4 px-4 text-white h-10 rounded-md w-fit">Login</button>
         </div>
       </form>
     </div>

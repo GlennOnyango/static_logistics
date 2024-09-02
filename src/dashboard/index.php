@@ -51,18 +51,18 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
       <div class="w-full flex justify-center">
         <img src="../assets/images/logo_logo 1.png" loading="lazy" alt="Logo" class="w-36 h-14 hidden lg:flex" />
       </div>
-      <a href="./" class="w-full flex justify-center py-4 bg-yellow-300">
+      <a href="./" class="w-full flex justify-center py-4 bg-light_blue_background">
         <h2 class="font-semibold text-lg">Users</h2>
       </a>
-      <a href="./blogs/" class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
+      <a href="./blogs/" class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-light_blue_background py-4">
         <h2 class="font-semibold text-lg">Blogs</h2>
       </a>
-      <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4 cursor-pointer" id="logout">
+      <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-light_blue_background py-4 cursor-pointer" id="logout">
         <h2 class="font-semibold text-lg">Logout</h2>
       </div>
     </div>
 
-    <div class="grow bg-yellow-300 justify-center flex overflow-y-auto pt-8">
+    <div class="grow bg-light_blue_background justify-center flex overflow-y-auto pt-8">
       <div class="w-1/2" id="user_div">
         <!-- user table-->
         <div class="w-fit p-4 bg-white flex flex-col" id="user_table">
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
               <h1 class="font-semibold text-2xl">Users</h1>
             </div>
             <div class="w-1/2 flex justify-end">
-              <a href="./add-user/" class="bg-gray-200 hover:bg-yellow-300 py-2 px-4 rounded-lg">
+              <a href="./add-user/" class="bg-gray-200 hover:bg-light_blue_background py-2 px-4 rounded-lg">
                 Add User
               </a>
             </div>

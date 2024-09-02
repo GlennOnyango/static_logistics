@@ -1,8 +1,14 @@
 <?php
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "ty_logistics";
+
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "ty_logistics";
+$password = "ty_logistics123.";
 $dbname = "ty_logistics";
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

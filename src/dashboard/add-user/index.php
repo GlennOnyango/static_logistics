@@ -86,20 +86,20 @@ function test_input($data)
       <div class="w-full flex justify-center">
         <img src="../../assets/images/logo_logo 1.png" loading="lazy" alt="Logo" class="w-36 h-14 hidden lg:flex" />
       </div>
-      <a href="../" class="w-full flex justify-center py-4 bg-yellow-300">
+      <a href="../" class="w-full flex justify-center py-4 bg-light_blue_background">
         <h2 class="font-semibold text-lg">Users</h2>
       </a>
-      <a href="../blog/" class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4">
+      <a href="../blogs/" class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-light_blue_background py-4">
         <h2 class="font-semibold text-lg">Blogs</h2>
       </a>
       
-      <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4 cursor-pointer"
+      <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-light_blue_background py-4 cursor-pointer"
                 id="logout">
                 <h2 class="font-semibold text-lg">Logout</h2>
             </div>
     </div>
 
-    <div class="grow bg-yellow-300 justify-center flex overflow-y-auto pt-8">
+    <div class="grow bg-light_blue_background justify-center flex overflow-y-auto pt-8">
       <div class="w-1/2" id="user_div">
 
         <?php if ($error === "New record created successfully") {
@@ -143,12 +143,12 @@ function test_input($data)
             </div>
             <div class="w-full flex justify-center gap-2">
               <button type="submit"
-                class="bg-dark_background mt-4 px-4 text-white h-10 rounded-md w-fit hover:bg-yellow-300 hover:text-dark_text_para">
+                class="bg-dark_background mt-4 px-4 text-white h-10 rounded-md w-fit hover:bg-light_blue_background hover:text-dark_text_para">
                 Add user
               </button>
 
               <a href="../" type="button"
-                class="bg-gray-200 mt-4 px-4 text-black h-10 rounded-md flex items-center w-fit hover:bg-yellow-300">
+                class="bg-gray-200 mt-4 px-4 text-black h-10 rounded-md flex items-center w-fit hover:bg-light_blue_background">
                 View all users
               </a>
             </div>

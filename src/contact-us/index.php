@@ -7,15 +7,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $company = test_input($_POST["company"]);
   $name = test_input($_POST["name"]);
   $email = test_input($_POST["email"]);
+  $phone = test_input($_POST["phone"]);
   $subject = test_input($_POST["subject"]);
   $message = test_input($_POST["message"]);
 
   // send email
-  $to = "xyz@ty....com";
+  $to = "nmgasa5c3th7@p3plzcpnl505463.prod.phx3.secureserver.net";
   $subject = "Contact Us";
-  $txt = "Company: $company\nName: $name\nEmail: $email\nSubject: $subject\nMessage: $message";
+  $txt = "Company: $company\nName: $name\nPhone: $phone\nEmail: $email\nSubject: $subject\nMessage: $message";
   $headers = "From: $email";
-  mail($to, $subject, $message, $headers);
+  mail($to, $subject, $txt, $headers);
+
+  // if (mail($to, $subject, $message, $headers)) {
+  //   echo "Email sent successfully";
+  // } else {
+  //   echo "Email not sent";
+  // }
 
 }
 
@@ -48,7 +55,11 @@ function test_input($data)
       </button>
     </div>
 
-    <img src="../assets/images/logo_logo 1.png" loading="lazy" alt="Logo" class="w-36 h-14 hidden lg:flex" />
+
+    <a href="../" class="flex items-center gap-4">
+
+      <img src="../assets/images/logo_logo 1.png" loading="lazy" alt="Logo" class="w-36 h-14 hidden lg:flex" />
+    </a>
     <nav class="leading-12 hidden lg:flex">
       <ul class="flex justify-center gap-8">
         <li>
@@ -146,15 +157,23 @@ function test_input($data)
           <input type="email" id="email" name="email" required
             class="h-12 rounded-md col-span-3 md:col-span-2 mb-4 px-4 text-dark_background" />
 
+          <label for="phone"
+            class="text-xl font-medium text-start md:text-end h-12 col-span-3 md:col-span-1 leading-10 pr-10">
+            Phone Number
+          </label>
+          <input type="phone" id="phone" name="phone" required
+            class="h-12 rounded-md col-span-3 md:col-span-2 mb-4 px-4 text-dark_background" />
+
+
           <label for="subject"
             class="text-xl font-medium text-start md:text-end h-12 col-span-3 md:col-span-1 leading-10 pr-10">
             Subject Request
           </label>
           <select name="subject" id="subject" required
             class="h-12 rounded-md col-span-3 md:col-span-2 mb-4 px-4 text-dark_background">
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
+            <option value="Contract Logistics & Free Zone Solution">Contract Logistics & Free Zone Solution</option>
+            <option value="Transport & Distribution Solution">Transport & Distribution Solution</option>
+            <option value="Other Request (Specify in message)">Other Request (Specify in message)</option>
           </select>
 
           <label for="message"
@@ -243,7 +262,7 @@ function test_input($data)
 
   <footer
     class="bg-light_blue_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext">
-    <div class="flex flex-col">
+    <a href="../" class="flex flex-col">
       <img src="../assets/images/Logo white_logo copy_logo copy 1.png" alt="Logo" class="h-14 mb-8" loading="lazy" />
       <h5 class="text-white text-start text-base font-normal">
         TY Logistics Park FZE
@@ -252,7 +271,7 @@ function test_input($data)
       <h5 class="text-white text-start text-base font-normal">
         Copyright 2024
       </h5>
-    </div>
+    </a>
 
     <div>
       <ul class="gap-2">
@@ -293,13 +312,13 @@ function test_input($data)
       <h5 class="text-white text-start text-base font-bold">
         Group Company:
       </h5>
-      <h5 class="text-white text-start text-base mb-6 font-bold">
+      <a href="https://nalcomet.com/" target="_blank" class="text-white text-start text-base mb-6 font-bold">
         Nal Comet shipping
-      </h5>
+      </a>
 
-      <h5 class="text-white text-start text-base font-normal">
-        Cookie & Privacy Policy
-      </h5>
+      <a href="../cookie-policy/" class="text-white text-start text-base font-normal">
+          Cookie & Privacy Policy
+        </a>
     </div>
   </footer>
 

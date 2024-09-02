@@ -51,23 +51,23 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
                 <img src="../../assets/images/logo_logo 1.png" loading="lazy" alt="Logo"
                     class="w-36 h-14 hidden lg:flex" />
             </div>
-            <a href="../" class="w-full flex justify-center py-4 bg-gray-200 hover:bg-yellow-300">
+            <a href="../" class="w-full flex justify-center py-4 bg-gray-200 hover:bg-light_blue_background">
                 <h2 class="font-semibold text-lg">Users</h2>
             </a>
-            <a href="./" class="w-full flex justify-center mt-1 bg-yellow-300 py-4">
+            <a href="./" class="w-full flex justify-center mt-1 bg-light_blue_background py-4">
                 <h2 class="font-semibold text-lg">Blogs</h2>
             </a>
-            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4 cursor-pointer"
+            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-light_blue_background py-4 cursor-pointer"
                 id="logout">
                 <h2 class="font-semibold text-lg">Logout</h2>
             </div>
         </div>
 
-        <div class="grow bg-yellow-300 grid grid-cols-3 text-white text-5xl overflow-y-auto p-4">
+        <div class="grow bg-light_blue_background grid grid-cols-3 text-white text-5xl overflow-y-auto p-4 gap-4">
 
-            <div class="col-span-3 flex flex-row justify-between h-fit">
-                <h1 class="text-4xl font-[350] text-black">Blogs</h1>
-                <a href="./create" class="bg-black text-2xl py-2 px-4 rounded-lg">Add Blog</a>
+            <div class="col-span-3 flex flex-row justify-between h-fit mb-4">
+                <h1 class="text-4xl font-[350] ">Blogs</h1>
+                <a href="./create" class="bg-dark_background text-xl py-2 px-4 rounded-lg">Add Blog</a>
             </div>
 
             <?php

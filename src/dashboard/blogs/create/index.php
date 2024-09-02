@@ -147,20 +147,20 @@ function uploadImage($file, $path, $user_id)
                 <img src="../../../assets/images/logo_logo 1.png" loading="lazy" alt="Logo"
                     class="w-36 h-14 hidden lg:flex" />
             </div>
-            <a href="../../" class="w-full flex justify-center bg-gray-200 py-4 hover:bg-yellow-300" id="activate_user">
+            <a href="../../" class="w-full flex justify-center bg-gray-200 py-4 hover:bg-light_blue_background" id="activate_user">
                 <h2 class="font-semibold text-lg">Users</h2>
             </a>
-            <a href="../" class="w-full flex justify-center mt-1 bg-yellow-300 py-4" id="activate_blog">
+            <a href="../" class="w-full flex justify-center mt-1 bg-light_blue_background py-4" id="activate_blog">
                 <h2 class="font-semibold text-lg">Blogs</h2>
             </a>
 
-            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-yellow-300 py-4 cursor-pointer"
+            <div class="w-full flex justify-center mt-1 bg-gray-200 hover:bg-light_blue_background py-4 cursor-pointer"
                 id="logout">
                 <h2 class="font-semibold text-lg">Logout</h2>
             </div>
         </div>
 
-        <div class="grow bg-yellow-300 justify-center flex overflow-y-auto pt-8">
+        <div class="grow bg-light_blue_background justify-center flex overflow-y-auto pt-8">
 
 
             <!--blog-->
@@ -220,12 +220,12 @@ function uploadImage($file, $path, $user_id)
 
                         <div class="w-full flex justify-center gap-2">
                             <button type="submit"
-                                class="bg-dark_background mt-4 px-4 text-white h-10 rounded-md w-fit hover:bg-yellow-300 hover:text-dark_text_para">
+                                class="bg-dark_background mt-4 px-4 text-white h-10 rounded-md w-fit hover:bg-light_blue_background hover:text-dark_text_para">
                                 Create blog
                             </button>
 
                             <a href="../"
-                                class="bg-gray-200 mt-4 px-4 text-black h-10 rounded-md w-fit hover:bg-yellow-300 flex justify-center items-center">
+                                class="bg-gray-200 mt-4 px-4 text-black h-10 rounded-md w-fit hover:bg-light_blue_background flex justify-center items-center">
                                 View all blogs
                             </a>
                         </div>

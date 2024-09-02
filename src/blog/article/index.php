@@ -75,7 +75,11 @@ function test_input($data)
       </button>
     </div>
 
-    <img src="../../assets/images/logo_logo 1.png" loading="lazy" alt="Logo" class="w-36 h-14 hidden lg:flex" />
+
+    <a href="../../" class="flex items-center gap-4">
+
+      <img src="../../assets/images/logo_logo 1.png" loading="lazy" alt="Logo" class="w-36 h-14 hidden lg:flex" />
+    </a>
     <nav class="leading-12 hidden lg:flex">
       <ul class="flex justify-center gap-8">
         <li>
@@ -159,7 +163,7 @@ function test_input($data)
             $img_url = $row["image_url"];
             $article_id = $row["id"];
 
-            
+
             //remove the first 3 characters from the image url
             $img_url = substr($img_url, 3);
 
@@ -218,7 +222,7 @@ function test_input($data)
 
   <footer
     class="bg-light_blue_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext">
-    <div class="flex flex-col">
+    <a href="../../" class="flex flex-col">
       <img src="../../assets/images/Logo white_logo copy_logo copy 1.png" alt="Logo" class="h-14 mb-8" loading="lazy" />
       <h5 class="text-white text-start text-base font-normal">
         TY Logistics Park FZE
@@ -227,7 +231,7 @@ function test_input($data)
       <h5 class="text-white text-start text-base font-normal">
         Copyright 2024
       </h5>
-    </div>
+    </a>
 
     <div>
       <ul class="gap-2">
@@ -268,13 +272,15 @@ function test_input($data)
       <h5 class="text-white text-start text-base font-bold">
         Group Company:
       </h5>
-      <h5 class="text-white text-start text-base mb-6 font-bold">
-        Nal Comet shipping
-      </h5>
 
-      <h5 class="text-white text-start text-base font-normal">
-        Cookie & Privacy Policy
-      </h5>
+      <a href="https://nalcomet.com/" target="_blank" class="text-white text-start text-base mb-6 font-bold">
+        Nal Comet shipping
+      </a>
+
+
+      <a href="../../cookie-policy/" class="text-white text-start text-base font-normal">
+          Cookie & Privacy Policy
+        </a>
     </div>
   </footer>
 
