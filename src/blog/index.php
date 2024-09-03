@@ -5,7 +5,7 @@
 <?php include '../php/config/db_connection.php';
 if ($_SERVER["REQUEST_METHOD"] === "GET") {
   // Prepare the SQL statement with placeholders 
-  $sql = "SELECT * FROM blog"; // Create a prepared statement 
+  $sql = "SELECT * FROM blog ORDER BY date_time ASC"; // Create a prepared statement 
   $stmt = $conn->prepare($sql);
 
   $result = $conn->query($sql);
@@ -103,13 +103,18 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
     </section>
 
     <!-- Image and advert -->
-    <section class="min-h-[70vh] blog_background">
-      <div class="px-10 md:px-24 lg:px-36 xl:px-48 py-14 flex items-end min-h-[inherit] advert_div">
-        <h1 class="text-5xl font-bold text-white col-span-2 text-start">
-          Pioneering a new contract logistics standard in the Nigerian & West
-          African Market.
-        </h1>
+    <section class="min-h-[70vh]">
+      <div class="min-h-[inherit] w-full bg-gray-200 relative">
+        <div class="px-10 md:px-24 lg:px-36 xl:px-48 py-14 flex items-end min-h-[inherit] hero_overlay">
+          <h1 class="text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text">
+            Pioneering a new contract logistics standard in the Nigerian & West
+            African Market.
+          </h1>
+        </div>
+        <img src="../assets/images/blog/adrian-sulyok-InMD-APxayI-unsplash 1.png" id="blog_img"
+          class="h-full w-full object-cover absolute top-0 opacity-70" alt="Free zone Hero" />
       </div>
+
     </section>
 
     <!-- Blogs grid-->
@@ -244,8 +249,8 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
       </a>
 
       <a href="../cookie-policy/" class="text-white text-start text-base font-normal">
-          Cookie & Privacy Policy
-        </a>
+        Cookie & Privacy Policy
+      </a>
     </div>
   </footer>
 

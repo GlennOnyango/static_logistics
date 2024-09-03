@@ -16,7 +16,7 @@ if (!$_SESSION["user_id"]) {
 
 if ($_SERVER["REQUEST_METHOD"] === "GET") {
     // Prepare the SQL statement with placeholders
-    $sql = "SELECT * FROM blog";
+    $sql = "SELECT * FROM blog ORDER BY date_time ASC";
 
     // Create a prepared statement
     $stmt = $conn->prepare($sql);

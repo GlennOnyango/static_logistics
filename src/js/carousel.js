@@ -1,144 +1,130 @@
-const carousel_ids = [
-  "kind_background",
-  "blog_background",
-  "about_us_background",
-  "advert",
-];
-
-const carousel_ids_object = {
-  kind_background: {
-    title:
-      "WMS Systems Driven Operations  in Nigeria & West Africa",
-  },
-  blog_background: {
-    title: "Free Zone Value Added Services & Importer of Record Solutions",
-  },
-  about_us_background: {
-    title: "Last Mile Transport & Distribution Solutions in the Region",
-  },
-  advert: {
-    title: "World class Free Zone Contract Logistics in Nigeria & West Africa",
-  },
-};
+const img_ids = ["world_class", "wms_operations", "free_zone", "last_mile"];
 
 document.addEventListener("DOMContentLoaded", () => {
-  let timeInterval = 5000;
-  let intervalfn = () => {
-    let id_item = document.querySelector(".carsouel_div").id;
-    let current_idx = carousel_ids.indexOf(id_item);
+  let Idx = 0;
+  const img_section = document.querySelector("#img_section");
+  for (const child of img_section.children) {
+    if (child.classList.contains("relative")) {
+      Idx = img_ids.indexOf(child.id);
+    }
+  }
 
-    if (current_idx < 3) {
-      current_idx += 1;
+  let timeInterval = 5000;
+
+  let intervalfn = () => {
+    if (Idx < 3) {
+      document.querySelector(`#${img_ids[Idx]}`).classList.add("hidden");
+      document.querySelector(`#${img_ids[Idx]}`).classList.remove("relative");
+        
+      Idx += 1;
     } else {
-      current_idx = 0;
+      document.querySelector(`#${img_ids[Idx]}`).classList.add("hidden");
+      document.querySelector(`#${img_ids[Idx]}`).classList.remove("relative");
+      
+      Idx = 0;
     }
 
-    document.querySelector(".carsouel_div").id = carousel_ids[current_idx];
-    //update text
-    document.querySelector(".carousel_text").textContent =
-      carousel_ids_object[carousel_ids[current_idx]].title;
-
-    change_vector(`${carousel_ids[current_idx]}_presser`);
+    document.querySelector(`#${img_ids[Idx]}`).classList.add("relative");
+    document.querySelector(`#${img_ids[Idx]}`).classList.remove("hidden");
   };
 
   let carousel_time = setInterval(intervalfn, timeInterval);
 
-  //change vector fill
-  change_vector = (current_id) => {
-    document.querySelectorAll(".vector_change").forEach((e) => {
-      if (current_id === e.id) {
-        //update vector color
-        document.querySelector(`#${e.id}`).classList.remove("fill-white");
+  document.querySelectorAll("#next").forEach((e) => {
+    e.addEventListener("click", (e) => {
+      if (Idx < 3) {
+        document.querySelector(`#${img_ids[Idx]}`).classList.add("hidden");
+        document.querySelector(`#${img_ids[Idx]}`).classList.remove("relative");
 
-        document.querySelector(`#${e.id}`).classList.add("fill-blue-500");
+        Idx += 1;
       } else {
-        //update vector color
-        document.querySelector(`#${e.id}`).classList.remove("fill-blue");
+        document.querySelector(`#${img_ids[Idx]}`).classList.add("hidden");
+        document.querySelector(`#${img_ids[Idx]}`).classList.remove("relative");
 
-        document.querySelector(`#${e.id}`).classList.add("fill-white");
+        Idx = 0;
       }
+
+      document.querySelector(`#${img_ids[Idx]}`).classList.add("relative");
+      document.querySelector(`#${img_ids[Idx]}`).classList.remove("hidden");
+
+      clearInterval(carousel_time);
+      carousel_time = setInterval(intervalfn, timeInterval);
     });
-  };
-
-  const kind_background_presser = document.querySelector(
-    "#kind_background_presser"
-  );
-
-  const blog_background_presser = document.querySelector(
-    "#blog_background_presser"
-  );
-
-  const about_us_background_presser = document.querySelector(
-    "#about_us_background_presser"
-  );
-
-  const advert_presser = document.querySelector("#advert_presser");
-
-  //circle button control
-  advert_presser.addEventListener("click", (e) => {
-    document.querySelector(".carsouel_div").id = "advert";
-    //update text
-    document.querySelector(".carousel_text").textContent =
-      carousel_ids_object.advert.title;
-
-    change_vector("advert_presser");
-
-    clearInterval(carousel_time);
-    carousel_time = setInterval(intervalfn, timeInterval);
   });
 
-  kind_background_presser.addEventListener("click", (e) => {
-    document.querySelector(".carsouel_div").id = "kind_background";
-    //update text
-    document.querySelector(".carousel_text").textContent =
-      carousel_ids_object.kind_background.title;
+  document.querySelectorAll("#advert_presser").forEach((e) => {
+    e.addEventListener("click", (e) => {
+      img_ids.forEach((id) => {
+        if (id === "world_class") {
+          document.querySelector(`#world_class`).classList.add("relative");
+          document.querySelector(`#world_class`).classList.remove("hidden");
+        } else {
+          document.querySelector(`#${id}`).classList.add("hidden");
+          document.querySelector(`#${id}`).classList.remove("relative");
+        }
+      });
 
-    change_vector("kind_background_presser");
+      Idx = 0;
 
-    clearInterval(carousel_time);
-    carousel_time = setInterval(intervalfn, timeInterval);
+      clearInterval(carousel_time);
+      carousel_time = setInterval(intervalfn, timeInterval);
+    });
   });
 
-  blog_background_presser.addEventListener("click", (e) => {
-    document.querySelector(".carsouel_div").id = "blog_background";
-    //update text
-    document.querySelector(".carousel_text").textContent =
-      carousel_ids_object.blog_background.title;
+  document.querySelectorAll("#kind_background_presser").forEach((e) => {
+    e.addEventListener("click", (e) => {
+      img_ids.forEach((id) => {
+        if (id === "wms_operations") {
+          document.querySelector(`#wms_operations`).classList.add("relative");
+          document.querySelector(`#wms_operations`).classList.remove("hidden");
+        } else {
+          document.querySelector(`#${id}`).classList.add("hidden");
+          document.querySelector(`#${id}`).classList.remove("relative");
+        }
+      });
 
-    change_vector("blog_background_presser");
+      Idx = 1;
 
-    clearInterval(carousel_time);
-    carousel_time = setInterval(intervalfn, timeInterval);
+      clearInterval(carousel_time);
+      carousel_time = setInterval(intervalfn, timeInterval);
+    });
   });
 
-  about_us_background_presser.addEventListener("click", (e) => {
-    document.querySelector(".carsouel_div").id = "about_us_background";
-    //update text
-    document.querySelector(".carousel_text").textContent =
-      carousel_ids_object.about_us_background.title;
+  document.querySelectorAll("#blog_background_presser").forEach((e) => {
+    e.addEventListener("click", (e) => {
+      img_ids.forEach((id) => {
+        if (id === "free_zone") {
+          document.querySelector(`#free_zone`).classList.add("relative");
+          document.querySelector(`#free_zone`).classList.remove("hidden");
+        } else {
+          document.querySelector(`#${id}`).classList.add("hidden");
+          document.querySelector(`#${id}`).classList.remove("relative");
+        }
+      });
 
-    change_vector("about_us_background_presser");
+      Idx = 2;
 
-    clearInterval(carousel_time);
-    carousel_time = setInterval(intervalfn, timeInterval);
+      clearInterval(carousel_time);
+      carousel_time = setInterval(intervalfn, timeInterval);
+    });
   });
 
-  document.querySelector("#next").addEventListener("click", () => {
-    let id_item = document.querySelector(".carsouel_div").id;
-    let current_idx = carousel_ids.indexOf(id_item);
+  document.querySelectorAll("#about_us_background_presser").forEach((e) => {
+    e.addEventListener("click", (e) => {
+      img_ids.forEach((id) => {
+        if (id === "last_mile") {
+          document.querySelector(`#last_mile`).classList.add("relative");
+          document.querySelector(`#last_mile`).classList.remove("hidden");
+        } else {
+          document.querySelector(`#${id}`).classList.add("hidden");
+          document.querySelector(`#${id}`).classList.remove("relative");
+        }
+      });
 
-    if (current_idx < 3) {
-      current_idx += 1;
-    } else {
-      current_idx = 0;
-    }
+      Idx = 3;
 
-    document.querySelector(".carsouel_div").id = carousel_ids[current_idx];
-    //update text
-    document.querySelector(".carousel_text").textContent =
-      carousel_ids_object[carousel_ids[current_idx]].title;
-
-    clearInterval(carousel_time);
-    carousel_time = setInterval(intervalfn, timeInterval);
+      clearInterval(carousel_time);
+      carousel_time = setInterval(intervalfn, timeInterval);
+    });
   });
 });

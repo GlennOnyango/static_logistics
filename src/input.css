@@ -77,6 +77,14 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
+.hero_overlay {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 60, 255, 1),
+    rgba(0, 60, 255, 1)
+  );
+}
+
 .advert_div {
   background-image: linear-gradient(
     to right,

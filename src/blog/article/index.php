@@ -138,12 +138,19 @@ function test_input($data)
 
   <main class="main-body">
     <!-- Image and advert -->
-    <section class="min-h-[45vh] advert">
-      <div class="px-10 md:px-24 lg:px-36 xl:px-48 flex items-center min-h-[inherit] advert_div">
-        <h1 class="text-5xl font-bold text-white col-span-2 text-start">
-          Blog Article:
-        </h1>
+    <section class="min-h-[45vh]">
+
+      <div class="min-h-[inherit] w-full bg-gray-200 relative">
+        <div class="px-10 md:px-24 lg:px-36 xl:px-48 flex items-center min-h-[inherit] hero_overlay">
+          <h1 class="text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text">
+            Blog Article:
+          </h1>
+        </div>
+        <img src="../../assets/images/home/World class Free Zone Contract Logistics in Nigeria & West Africa.jpg"
+          id="blog_img" class="h-full w-full object-cover absolute top-0 opacity-70" alt="About us Hero" />
       </div>
+
+
     </section>
 
     <section

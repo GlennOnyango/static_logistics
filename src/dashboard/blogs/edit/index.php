@@ -66,6 +66,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $details = test_input($_POST["details"]);
     $article_id = test_input($_POST["article_id"]);
 
+    //timestamp
+    $date_time = date("Y-m-d H:i:s");
+
+    echo $date_time;
+
     if ($_FILES["image"]["name"]) {
 
         $image = uploadImage($_FILES["image"], "../../../assets/images/blog/uploads/", $user_id);
@@ -82,13 +87,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
             // Prepare the SQL statement with placeholders
-            $sql = "UPDATE blog SET title = ?, image_url = ?, details = ? WHERE id = ? AND user_id = ?";
+            $sql = "UPDATE blog SET title = ?, image_url = ?, details = ?, date_time = ? WHERE id = ? AND user_id = ?";
 
             // Create a prepared statement
             $stmt = $conn->prepare($sql);
 
             // Bind parameters to the statement
-            $stmt->bind_param("sssii", $title, $image, $description, $article_id, $user_id);
+            $stmt->bind_param("sssii", $title, $image, $description, $date_time, $article_id, $user_id);
 
             // Execute the statement
 
@@ -106,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $error = "Error uploading image";
         }
     } else {
-        $sql = "UPDATE blog SET title = ?, details = ? WHERE id = ? AND user_id = ?";
+        $sql = "UPDATE blog SET title = ?, details = ?, date_time = ? WHERE id = ? AND user_id = ?";
 
         // Replace multiple newlines with a single newline
         $description = preg_replace('/\n{2,}/', "\n", $details);
@@ -120,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt = $conn->prepare($sql);
 
         // Bind parameters to the statement
-        $stmt->bind_param("ssii", $title, $description, $article_id, $user_id);
+        $stmt->bind_param("sssii", $title, $description, $date_time, $article_id, $user_id);
 
         // Execute the statement
 
@@ -227,7 +232,8 @@ function uploadImage($file, $path, $user_id)
                 <img src="../../../assets/images/logo_logo 1.png" loading="lazy" alt="Logo"
                     class="w-36 h-14 hidden lg:flex" />
             </div>
-            <a href="../../" class="w-full flex justify-center bg-gray-200 py-4 hover:bg-light_blue_background" id="activate_user">
+            <a href="../../" class="w-full flex justify-center bg-gray-200 py-4 hover:bg-light_blue_background"
+                id="activate_user">
                 <h2 class="font-semibold text-lg">Users</h2>
             </a>
             <a href="../" class="w-full flex justify-center mt-1 bg-light_blue_background py-4" id="activate_blog">
