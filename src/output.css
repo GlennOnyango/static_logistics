@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -562,12 +566,24 @@ video {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
 }
 
 .col-span-1 {
@@ -745,6 +761,10 @@ video {
   height: 100vh;
 }
 
+.max-h-\[inherit\] {
+  max-height: inherit;
+}
+
 .min-h-\[45vh\] {
   min-height: 45vh;
 }
@@ -767,10 +787,6 @@ video {
 
 .min-h-\[inherit\] {
   min-height: inherit;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .w-1\/2 {
@@ -800,6 +816,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .grow {
@@ -1019,14 +1039,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .fill-blue-500 {
@@ -1273,6 +1288,14 @@ video {
 
 .opacity-70 {
   opacity: 0.7;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-60 {
+  opacity: 0.6;
 }
 
 .transition {
@@ -1750,6 +1773,14 @@ nav ul li a {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-2 {
+    order: 2;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
