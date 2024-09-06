@@ -97,7 +97,7 @@ function test_input($data)
         </li>
 
         <li>
-          <a href="../../blog/">Blog</a>
+          <a href="../../blog/" class="active">Blog</a>
         </li>
       </ul>
     </nav>
@@ -131,7 +131,7 @@ function test_input($data)
       </li>
 
       <li>
-        <a href="../../blog/">Blog</a>
+        <a href="../../blog/" class="active">Blog</a>
       </li>
     </ul>
   </section>

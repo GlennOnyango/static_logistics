@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
         </li>
 
         <li>
-          <a href="./">Blog</a>
+          <a href="./" class="active">Blog</a>
         </li>
       </ul>
     </nav>
@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
       </li>
 
       <li>
-        <a href="./">Blog</a>
+        <a href="./" class="active">Blog</a>
       </li>
     </ul>
   </section>
