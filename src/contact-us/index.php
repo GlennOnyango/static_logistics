@@ -48,7 +48,7 @@ function test_input($data)
 </head>
 
 <body>
-  <header class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4">
+  <header class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4 nav_section">
     <div class="flex justify-center items-center lg:hidden">
       <button class="text-dark_text_para flex h-fit mobile-nav__toggle">
         <i class="fas fa-bars text-2xl"></i>

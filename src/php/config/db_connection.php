@@ -1,13 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ty_logistics";
-
 // $servername = "localhost";
-// $username = "ty_logistics";
-// $password = "ty_logistics123.";
+// $username = "root";
+// $password = "";
 // $dbname = "ty_logistics";
+
+$servername = "localhost";
+$username = "ty_logistics";
+$password = "ty_logistics123.";
+$dbname = "ty_logistics";
 
 
 // Create connection

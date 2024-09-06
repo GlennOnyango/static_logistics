@@ -90,7 +90,7 @@ function test_input($data)
 <body>
   <section class="h-screen flex flex-col">
     <div class="grow-0">
-      <header class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4">
+      <header class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4 nav_section">
         <div class="flex justify-center items-center lg:hidden">
           <button class="text-dark_text_para flex h-fit mobile-nav__toggle">
             <i class="fas fa-bars text-2xl"></i>
@@ -135,20 +135,20 @@ function test_input($data)
       <section class="bg-third_tile_about text-dark_text_para h-screen px-4 mobile-nav hidden">
         <ul class="space-y-4">
           <li>
-            <a href="./">Home</a>
+            <a href="../">Home</a>
           </li>
           <li>
-            <a href="./about-us/">About Us</a>
+            <a href="../about-us/">About Us</a>
           </li>
           <li>
-            <a href="./solutions/">Our Solutions</a>
+            <a href="../solutions/">Our Solutions</a>
           </li>
           <li>
-            <a href="./free-zone-grade-a-facilities/">Free Zone Grade-A Facilities</a>
+            <a href="../free-zone-grade-a-facilities/">Free Zone Grade-A Facilities</a>
           </li>
 
           <li>
-            <a href="./blog/">Blog</a>
+            <a href="../blog/">Blog</a>
           </li>
         </ul>
       </section>
