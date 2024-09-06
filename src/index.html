@@ -26,12 +26,19 @@
           class="bg-third_tile_about text-dark_text_para flex flex-row justify-between px-4 sm:px-12 py-4"
         >
           <div class="flex justify-center items-center lg:hidden">
-            <button class="text-dark_text_para flex h-fit mobile-nav__toggle">
+            <button
+              class="text-dark_text_para flex h-fit mobile-nav__toggle"
+              aria-label="Menu"
+            >
               <i class="fas fa-bars text-2xl"></i>
             </button>
           </div>
 
-          <a href="./" class="flex items-center gap-4">
+          <a
+            href="./"
+            class="flex items-center gap-4"
+            aria-label="company logo"
+          >
             <img
               src="assets/images/logo_logo 1.png"
               loading="lazy"
@@ -42,22 +49,26 @@
           <nav class="leading-12 hidden lg:flex">
             <ul class="flex justify-center gap-8">
               <li>
-                <a href="./">Home</a>
+                <a href="./" aria-label="home link">Home</a>
               </li>
               <li>
-                <a href="./about-us/">About Us</a>
+                <a href="./about-us/" aria-label="About us link">About Us</a>
               </li>
               <li>
-                <a href="./solutions/">Our Solutions</a>
+                <a href="./solutions/" aria-label="Our solutions link"
+                  >Our Solutions</a
+                >
               </li>
               <li>
-                <a href="./free-zone-grade-a-facilities/"
+                <a
+                  href="./free-zone-grade-a-facilities/"
+                  aria-label="Free zone link"
                   >Free Zone Grade-A Facilities</a
                 >
               </li>
 
               <li>
-                <a href="./blog/">Blog</a>
+                <a href="./blog/" aria-label="blog link">Blog</a>
               </li>
             </ul>
           </nav>
@@ -66,6 +77,7 @@
             <a
               class="contact-btn bg-gray_background text-white flex flex-row justify-center items-center gap-4 px-4 py-2 w-fit h-fit text-dark_text_para rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               href="./contact-us/"
+              aria-label="contact us link"
               >Contact Us
 
               <svg
@@ -89,22 +101,26 @@
         >
           <ul class="space-y-4">
             <li>
-              <a href="./">Home</a>
+              <a href="./" aria-label="home link">Home</a>
             </li>
             <li>
-              <a href="./about-us/">About Us</a>
+              <a href="./about-us/" aria-label="About us link">About Us</a>
             </li>
             <li>
-              <a href="./solutions/">Our Solutions</a>
+              <a href="./solutions/" aria-label="Our solutions link"
+                >Our Solutions</a
+              >
             </li>
             <li>
-              <a href="./free-zone-grade-a-facilities/"
+              <a
+                href="./free-zone-grade-a-facilities/"
+                aria-label="Free zone link"
                 >Free Zone Grade-A Facilities</a
               >
             </li>
 
             <li>
-              <a href="./blog/">Blog</a>
+              <a href="./blog/" aria-label="blog link">Blog</a>
             </li>
           </ul>
         </section>
@@ -715,6 +731,7 @@
             >
               <a
                 href="./solutions/"
+                aria-label="all solutions button"
                 class="bg-solutions_card px-4 py-2 text-black w-fit h-fit rounded-xl flex flex-row justify-center items-center gap-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               >
                 <span class="text-2xl font-bold">All Solutions</span>
@@ -1242,7 +1259,10 @@
                 offers flexible pricing models to suit different business needs,
                 and detailed quotes can be provided upon request. Get started
                 here
-                <a href="./contact-us/" class="text-blue-400 underline"
+                <a
+                  href="./contact-us/"
+                  class="text-blue-400 underline"
+                  aria-label="contact us link"
                   >contact us</a
                 >.
               </p>
@@ -1259,6 +1279,7 @@
         <div class="col-span-2 md:col-span-1 row-span-1 relative">
           <a
             href="./about-us/"
+            aria-label="about us link"
             class="flex justify-center items-center images_card_div h-full"
           >
             <h2 class="text-4xl font-bold text-white z-50">About Us</h2>
@@ -1283,6 +1304,7 @@
         <div class="col-span-2 md:col-span-1 row-span-1 md:row-span-2 relative">
           <a
             href="./contact-us/"
+            aria-label="contact us link"
             class="flex justify-center items-center images_card_div h-full"
           >
             <h2 class="text-4xl font-bold text-white z-50">Contact Us</h2>
@@ -1306,6 +1328,7 @@
         <div class="col-span-2 md:col-span-1 row-span-1 relative">
           <a
             href="./free-zone-grade-a-facilities/"
+            aria-label="free zone link"
             class="flex justify-center items-center images_card_div h-full px-8"
           >
             <h2 class="text-4xl font-bold text-white z-50">
@@ -1335,7 +1358,7 @@
     <footer
       class="bg-light_blue_background flex flex-col sm:flex-row gap-4 justify-between px-10 lg:px-44 py-16 footer-ext"
     >
-      <a href="./" class="flex flex-col">
+      <a href="./" aria-label="company logo link" class="flex flex-col">
         <img
           src="assets/images/Logo white_logo copy_logo copy 1.png"
           alt="Company logo"
@@ -1354,21 +1377,33 @@
       <div>
         <ul class="gap-2">
           <li>
-            <a href="./" class="text-white text-base font-normal">Home</a>
+            <a
+              href="./"
+              aria-label="home link"
+              class="text-white text-base font-normal"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="./about-us/" class="text-white text-base font-normal"
+            <a
+              href="./about-us/"
+              aria-label="about us link"
+              class="text-white text-base font-normal"
               >About Us</a
             >
           </li>
           <li>
-            <a href="./solutions/" class="text-white text-base font-normal"
+            <a
+              href="./solutions/"
+              aria-label="solutions link"
+              class="text-white text-base font-normal"
               >Our Solutions</a
             >
           </li>
           <li>
             <a
               href="./free-zone-grade-a-facilities/"
+              aria-label="Grade-A facilitieslink"
               class="text-white text-base font-normal"
               >Grade-A Facilities</a
             >
@@ -1379,15 +1414,28 @@
       <div class="flex flex-col">
         <ul class="gap-2 mb-12">
           <li>
-            <a href="./contact-us/" class="text-white text-base font-normal"
+            <a
+              href="./contact-us/"
+              aria-label="contact us link"
+              class="text-white text-base font-normal"
               >Contact Us</a
             >
           </li>
           <li>
-            <a href="./faqs/" class="text-white text-base font-normal">FAQs</a>
+            <a
+              href="./faqs/"
+              aria-label="faqs link"
+              class="text-white text-base font-normal"
+              >FAQs</a
+            >
           </li>
           <li>
-            <a href="./blog/" class="text-white text-base font-normal">Blog</a>
+            <a
+              href="./blog/"
+              aria-label="blog link"
+              class="text-white text-base font-normal"
+              >Blog</a
+            >
           </li>
         </ul>
         <div class="flex flex-row gap-4 mb-10">
@@ -1414,6 +1462,7 @@
         <a
           href="https://nalcomet.com/"
           target="_blank"
+          aria-label="parent company link"
           class="text-white text-start text-base mb-6 font-bold"
         >
           Nal Comet shipping
@@ -1421,6 +1470,7 @@
 
         <a
           href="./cookie-policy/"
+          aria-label="cookie-policy link"
           class="text-white text-start text-base font-normal"
         >
           Cookie & Privacy Policy
