@@ -343,13 +343,21 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
-nav ul li:hover a::after {
+nav ul li a::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 0%;
   height: 2px;
-  background: #0088ff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 60, 255, 1),
+    rgba(0, 60, 255, 0.5)
+  );;
   transition: width 0.3s;
+}
+
+nav ul li:hover a::after {
+  width: 100%;
 }
 
 /* set color of active/selected link */
