@@ -120,18 +120,21 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
           $img_url = substr($img_url, 6);
 
 
-          echo "<div class='min-h-[inherit] w-full bg-gray-200 relative'>        
+          echo "<div class='min-h-[inherit] w-full bg-gray-200 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>        
           <div class='px-10 md:px-24 lg:px-36 xl:px-48 py-14 flex items-end min-h-[inherit] hero_overlay'>
-          <a href='./article?article_id=$article_id' class='text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
+          <h1 class='text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text'>
             $title
-          </a>
+          </h1>
         </div>
+          <a href='./article?article_id=$article_id' class='h-full w-full object-cover object-center absolute top-0 opacity-70'>
+           
     <img
             src='$img_url'
-            class='h-full w-full object-cover object-center absolute top-0 opacity-70'
+            class='h-full w-full object-cover object-center'
             alt='World class Free Zone Contract Logistics in Nigeria & West
             Africa'
           />
+          </a>
           
  </div>";
 
