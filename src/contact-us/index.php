@@ -125,7 +125,7 @@ function test_input($data)
             Contact Us
           </h1>
         </div>
-        <img src="../../assets/images/home/World class Free Zone Contract Logistics in Nigeria & West Africa.jpg"
+        <img src="../assets/images/home/World class Free Zone Contract Logistics in Nigeria & West Africa.jpg"
           id="blog_img" class="h-full w-full object-cover absolute top-0 opacity-70" alt="About us Hero" />
       </div>
 
@@ -191,7 +191,7 @@ function test_input($data)
             class="h-48 rounded-md col-span-3 md:col-span-2 mb-4 p-4 text-dark_background">  </textarea>
 
           <button type="submit"
-            class="bg-blue_background text-2xl font-semibold px-4 py-2 border-4 w-fit h-fit rounded-md md:col-start-2 md:col-span-2 col-span-3 mt-4 mb-12">
+            class="bg-light_blue_background text-2xl font-semibold px-4 py-2 w-fit h-fit rounded-md md:col-start-2 md:col-span-2 col-span-3 mt-4 mb-12">
             Send Message
           </button>
 
@@ -203,8 +203,9 @@ function test_input($data)
                   fill="white" />
               </svg>
 
-              <span class="text-2xl font-normal">xyz@ty....com</span>
+              <span class="text-2xl font-normal">info@tylogisticspark.com</span>
             </li>
+<!--             
             <li class="flex flex-row gap-4">
               <svg width="30" height="30" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -215,7 +216,7 @@ function test_input($data)
                   fill="white" />
               </svg>
               <span class="text-2xl font-normal">+34 123 456 789</span>
-            </li>
+            </li> -->
 
             <li class="flex flex-row gap-4">
               <svg width="30" height="30" viewBox="0 0 26 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,7 +231,7 @@ function test_input($data)
         </form>
 
         <div class="col-span-2 grid grid-cols-3 mt-12">
-          <img src="../assets/images/contact_us/contact us map.jpg" alt="Nigeria" loading="lazy"
+          <img src="../assets/images/contact_us/Contact Us Map photo.jpg" alt="Nigeria" loading="lazy"
             class="col-span-3 w-full" />
         </div>
       </section>

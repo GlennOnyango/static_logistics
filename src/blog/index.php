@@ -104,26 +104,58 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
 
     <!-- Image and advert -->
     <section class="min-h-[70vh]">
-      <div class="min-h-[inherit] w-full bg-gray-200 relative">
-        <div class="px-10 md:px-24 lg:px-36 xl:px-48 py-14 flex items-end min-h-[inherit] hero_overlay">
-          <h1 class="text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text">
-            Pioneering a new contract logistics standard in the Nigerian & West
-            African Market.
+      <?php
+      if ($result->num_rows > 0) {
+        if ($result->num_rows > 0) {
+
+          $row = $result->fetch_assoc();
+
+          //  echo "id: " . $row["user_id"] . " - Title: " . $row["title"] . " " . $row["details"] . "<br>";
+          $title = $row["title"];
+          $img_url = $row["image_url"];
+          $article_id = $row["id"];
+
+
+          //remove the first 3 characters from the image url
+          $img_url = substr($img_url, 6);
+
+
+          echo "<div class='min-h-[inherit] w-full bg-gray-200 relative'>        
+          <div class='px-10 md:px-24 lg:px-36 xl:px-48 py-14 flex items-end min-h-[inherit] hero_overlay'>
+          <h1 class='text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text'>
+            $title
           </h1>
         </div>
-        <img src="../assets/images/blog/adrian-sulyok-InMD-APxayI-unsplash 1.png" id="blog_img"
-          class="h-full w-full object-cover absolute top-0 opacity-70" alt="Free zone Hero" />
-      </div>
+    <img
+            src='$img_url'
+            class='h-full w-full object-cover object-center absolute top-0 opacity-70'
+            alt='World class Free Zone Contract Logistics in Nigeria & West
+            Africa'
+          />
+ </div>";
+
+
+
+
+
+        } else {
+          echo "0 results";
+        }
+      }
+      ?>
 
     </section>
 
     <!-- Blogs grid-->
-    <section class="min-h-[70vh] grid grid-cols-3 text-white text-5xl">
+    <section class="min-h-[70vh] grid grid-cols-3 text-black text-5xl">
 
 
       <?php
       if ($result->num_rows > 0) {
         if ($result->num_rows > 0) {
+
+          $my_row = $result->fetch_assoc();
+
           // output data of each row
           while ($row = $result->fetch_assoc()) {
             //  echo "id: " . $row["user_id"] . " - Title: " . $row["title"] . " " . $row["details"] . "<br>";
@@ -134,8 +166,6 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
 
             //remove the first 3 characters from the image url
             $img_url = substr($img_url, 6);
-
-
 
             echo "<div
         class='col-span-3 h-[50vh] md:col-span-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>

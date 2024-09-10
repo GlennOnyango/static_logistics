@@ -353,7 +353,7 @@ nav ul li a::after {
     rgba(0, 60, 255, 1),
     rgba(0, 60, 255, 0.5)
   );;
-  transition: width 0.3s;
+  transition: width 0.3s ease-in-out;
 }
 
 nav ul li:hover a::after {
