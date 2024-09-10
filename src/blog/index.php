@@ -122,9 +122,9 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
 
           echo "<div class='min-h-[inherit] w-full bg-gray-200 relative'>        
           <div class='px-10 md:px-24 lg:px-36 xl:px-48 py-14 flex items-end min-h-[inherit] hero_overlay'>
-          <h1 class='text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text'>
+          <a href='./article?article_id=$article_id' class='text-5xl font-bold z-50 text-white col-span-3 lg:col-span-2 text-start carousel_text transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
             $title
-          </h1>
+          </a>
         </div>
     <img
             src='$img_url'
@@ -132,6 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
             alt='World class Free Zone Contract Logistics in Nigeria & West
             Africa'
           />
+          
  </div>";
 
 
@@ -147,7 +148,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
     </section>
 
     <!-- Blogs grid-->
-    <section class="min-h-[70vh] grid grid-cols-3 text-black text-5xl">
+    <section class="min-h-[70vh] grid grid-cols-3 text-white text-5xl">
 
 
       <?php
