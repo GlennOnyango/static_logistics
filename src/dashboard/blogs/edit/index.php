@@ -91,9 +91,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             // Create a prepared statement
             $stmt = $conn->prepare($sql);
+            // print_r($title ."-->".$image."--->". $description."-->". $date_time."--->". $article_id."--->". $user_id);
 
             // Bind parameters to the statement
-            $stmt->bind_param("sssii", $title, $image, $description, $date_time, $article_id, $user_id);
+            $stmt->bind_param("ssssii", $title, $image, $description, $date_time, $article_id, $user_id);
 
             // Execute the statement
 
@@ -175,10 +176,10 @@ function uploadImage($file, $path, $user_id)
     }
 
     // Check if file already exists
-    if (file_exists($target_file)) {
-        echo "Sorry, file already exists.";
-        $uploadOk = 0;
-    }
+    // if (file_exists($target_file)) {
+    //     echo "Sorry, file already exists.";
+    //     $uploadOk = 0;
+    // }
 
     // Check file size
     // if ($file["size"] > 500000) {
