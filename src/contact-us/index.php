@@ -12,7 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $message = test_input($_POST["message"]);
 
   // send email
-  $to = "nmgasa5c3th7@p3plzcpnl505463.prod.phx3.secureserver.net";
+  //$to = "nmgasa5c3th7@p3plzcpnl505463.prod.phx3.secureserver.net";
+  $to = "info@tylogisticspark.com";
   $subject = "Contact Us";
   $txt = "Company: $company\nName: $name\nPhone: $phone\nEmail: $email\nSubject: $subject\nMessage: $message";
   $headers = "From: $email";
@@ -205,7 +206,7 @@ function test_input($data)
 
               <span class="text-2xl font-normal">info@tylogisticspark.com</span>
             </li>
-<!--             
+            <!--             
             <li class="flex flex-row gap-4">
               <svg width="30" height="30" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
